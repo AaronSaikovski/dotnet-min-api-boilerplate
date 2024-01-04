@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "0aaRMexOqJaUiJR6NMC9R16Sd7xuGqEyWSapjYbSl1M=",
+  "Source": "dotnet-minapi-boilerplate",
+  "BasePath": "_content/dotnet-minapi-boilerplate",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

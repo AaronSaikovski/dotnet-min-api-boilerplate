@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "dgSpecHash": "+GQm2dxfgB2iYk/9vQy8FqgMot0ZauM3JX4/ejahe8HHTUyySlEDKwnP8RAsA0ejxK7GLwixh6uDoL+l4PbCXw==",
+  "success": true,
+  "projectFilePath": "/Users/asaikovski/projects/dotnet/dotnet-min-api-boilerplate/dotnet-minapi-boilerplate.csproj",
+  "expectedPackageFiles": [
+    "/Users/asaikovski/.nuget/packages/microsoft.aspnetcore.openapi/8.0.0/microsoft.aspnetcore.openapi.8.0.0.nupkg.sha512",
+    "/Users/asaikovski/.nuget/packages/microsoft.extensions.apidescription.server/6.0.5/microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
+    "/Users/asaikovski/.nuget/packages/microsoft.openapi/1.4.3/microsoft.openapi.1.4.3.nupkg.sha512",
+    "/Users/asaikovski/.nuget/packages/swashbuckle.aspnetcore/6.5.0/swashbuckle.aspnetcore.6.5.0.nupkg.sha512",
+    "/Users/asaikovski/.nuget/packages/swashbuckle.aspnetcore.swagger/6.5.0/swashbuckle.aspnetcore.swagger.6.5.0.nupkg.sha512",
+    "/Users/asaikovski/.nuget/packages/swashbuckle.aspnetcore.swaggergen/6.5.0/swashbuckle.aspnetcore.swaggergen.6.5.0.nupkg.sha512",
+    "/Users/asaikovski/.nuget/packages/swashbuckle.aspnetcore.swaggerui/6.5.0/swashbuckle.aspnetcore.swaggerui.6.5.0.nupkg.sha512"
+  ],
+  "logs": []
+}
