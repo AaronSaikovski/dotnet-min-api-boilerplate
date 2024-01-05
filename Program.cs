@@ -5,6 +5,11 @@ using dotnet_minapi_boilerplate.extensions;
 using dotnet_minapi_boilerplate.endpoints;
 using HealthChecks.UI.Client;
 using Microsoft.AspNetCore.Diagnostics.HealthChecks;
+using System.Diagnostics;
+
+
+//Get timestamp
+var startTime = Stopwatch.GetTimestamp();
 
 //Init the logger and get the active config
 var logger = new SerilogLogger(ConfigurationHelper.ActiveConfiguration);
@@ -29,6 +34,16 @@ try
         {
             ResponseWriter = UIResponseWriter.WriteHealthCheckUIResponse
         });
+    
+    
+    //get lifetime
+    var lifetime= app.Services.GetRequiredService<IHostApplicationLifetime>();
+
+    //register the delegate and record elapsed time
+    lifetime.ApplicationStarted.Register(() =>
+    {
+        Console.WriteLine("Startup time: " + Stopwatch.GetElapsedTime(startTime).TotalMilliseconds + "ms");
+    });
     
     app.Run();
 }

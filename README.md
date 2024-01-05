@@ -77,6 +77,7 @@ The goal of this project is to be an way to kick start your .Net 8.0 WebApi proj
 2. OpenTelemetry integration.
 3. Auth and Authorisation support.
 4. Database support for MS SQL - Dapper or Entity Framework.
+5. Ahead of Time (AOT) native compilation support.
 
 # If you like it, give it a Star
 
