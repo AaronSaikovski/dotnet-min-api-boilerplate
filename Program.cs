@@ -12,7 +12,7 @@ var logger = new SerilogLogger(ConfigurationHelper.ActiveConfiguration);
 //Sample logger usage - https://github.com/serilog/serilog-aspnetcore
 try
 {
-    //logger.LogInformation("Starting web application");
+    logger.LogInformation("Starting web application");
     
     //Create the builder
     var builder = WebApplication.CreateBuilder(args);
