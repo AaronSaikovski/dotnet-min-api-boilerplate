@@ -1,48 +1,30 @@
 
+using dotnet_minapi_boilerplate.common.Logger;
+using dotnet_minapi_boilerplate.common.Config;
+using dotnet_minapi_boilerplate.extensions;
+using dotnet_minapi_boilerplate.endpoints;
 
-var builder = WebApplication.CreateBuilder(args);
+//Init the logger and get the active config
+var logger = new SerilogLogger(ConfigurationHelper.ActiveConfiguration);
 
-// Add services to the container.
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
-builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
-
-var app = builder.Build();
-
-// Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
+//Sample logger usage - https://github.com/serilog/serilog-aspnetcore
+try
 {
-    app.UseSwagger();
-    app.UseSwaggerUI();
+    //logger.LogInformation("Starting web application");
+    
+    //Create the builder
+    var builder = WebApplication.CreateBuilder(args);
+    builder.RegisterServices();
+    var app = builder.Build();
+    app.RegisterMiddleware();
+    app.RegisterSampleEndpoints();
+    app.Run();
 }
-
-app.UseHttpsRedirection();
-
-app.MapGet("/ping", () => "pong");
-
-var summaries = new[]
+catch (Exception ex)
 {
-    "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
-};
-
-app.MapGet("/weatherforecast", () =>
-    {
-        var forecast = Enumerable.Range(1, 5).Select(index =>
-                new WeatherForecast
-                (
-                    DateOnly.FromDateTime(DateTime.Now.AddDays(index)),
-                    Random.Shared.Next(-20, 55),
-                    summaries[Random.Shared.Next(summaries.Length)]
-                ))
-            .ToArray();
-        return forecast;
-    })
-    .WithName("GetWeatherForecast")
-    .WithOpenApi();
-
-app.Run();
-
-record WeatherForecast(DateOnly Date, int TemperatureC, string? Summary)
+    logger.LogFatal(ex, "Application terminated unexpectedly");
+}
+finally
 {
-    public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
+    logger.Dispose();
 }
