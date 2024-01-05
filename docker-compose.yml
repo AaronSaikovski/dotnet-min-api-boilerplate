@@ -1,0 +1,6 @@
+﻿services:
+  dotnet-minapi-boilerplate:
+    image: dotnet-minapi-boilerplate
+    build:
+      context: .
+      dockerfile: Dockerfile
