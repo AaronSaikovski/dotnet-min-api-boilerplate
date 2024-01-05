@@ -1,7 +1,5 @@
 # Use the official .NET Core SDK as a parent image
 FROM mcr.microsoft.com/dotnet/sdk:8.0-alpine AS build-env
-#FROM mcr.microsoft.com/dotnet/sdk:8.0.100-bookworm-slim AS build-build-env
-
 WORKDIR /app
 
 # Copy the project file and restore any dependencies (use .csproj for the project name)
