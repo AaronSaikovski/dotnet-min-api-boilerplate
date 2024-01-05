@@ -34,11 +34,11 @@ try
         {
             ResponseWriter = UIResponseWriter.WriteHealthCheckUIResponse
         });
-    
-    
+
+
     //get lifetime
     var lifetime= app.Services.GetRequiredService<IHostApplicationLifetime>();
-
+    
     //register the delegate and record elapsed time
     lifetime.ApplicationStarted.Register(() =>
     {
