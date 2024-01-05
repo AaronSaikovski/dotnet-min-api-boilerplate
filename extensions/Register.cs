@@ -7,7 +7,7 @@ namespace dotnet_minapi_boilerplate.extensions;
 /// <summary>
 /// RegisterServices
 /// </summary>
-public static class Configuration
+public static class Register
 {
     #region RegisterServices
     /// <summary>

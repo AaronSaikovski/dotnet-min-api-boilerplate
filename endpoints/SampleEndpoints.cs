@@ -1,5 +1,6 @@
 namespace dotnet_minapi_boilerplate.endpoints;
 
+
 public static class SampleEndpoints
 {
     //Ref: https://blog.treblle.com/how-to-structure-your-minimal-api-in-net/
@@ -12,10 +13,12 @@ public static class SampleEndpoints
     {
         
         var sampleRoutes = routes.MapGroup("/minapi/v1/");
+        
+        //Ping
         sampleRoutes.MapGet("/ping", () => "pong");
+  
         
-        
-        
+        //Sample weather
         var summaries = new[]
         {
             "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"

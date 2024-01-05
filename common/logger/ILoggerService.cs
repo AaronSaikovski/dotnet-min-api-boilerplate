@@ -1,4 +1,4 @@
-namespace dotnet_minapi_boilerplate.common.Logger;
+namespace dotnet_minapi_boilerplate.common.logger;
 
 /// <summary>
 /// Logging Interface

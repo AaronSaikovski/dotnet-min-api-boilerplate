@@ -1,7 +1,7 @@
 using Serilog;
 using Microsoft.Extensions.Configuration;
 
-namespace dotnet_minapi_boilerplate.common.Logger;
+namespace dotnet_minapi_boilerplate.common.logger;
 
 /// <summary>
 /// Implements logging via Serilog

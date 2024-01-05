@@ -1,9 +1,9 @@
-using Microsoft.Extensions.Configuration;
 
-namespace dotnet_minapi_boilerplate.common.Config;
+
+namespace dotnet_minapi_boilerplate.common.config;
 
 /// <summary>
-/// Configuration helper..reads from appsettings file per environment
+/// Register helper..reads from appsettings file per environment
 /// </summary>
 public static class ConfigurationHelper
 {
@@ -12,14 +12,14 @@ public static class ConfigurationHelper
     //API Key
     public static string? DataApiKey { get; }
     
-    //Active Configuration
+    //Active Register
     public static IConfiguration ActiveConfiguration { get; }
     
     #endregion
 
     #region ConfigurationHelper
     /// <summary>
-    /// Config helper
+    /// config helper
     /// </summary>
     static ConfigurationHelper()
     {

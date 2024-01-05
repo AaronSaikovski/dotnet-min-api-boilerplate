@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "CVHH8eGodkVXrKcrirZ/nbYGcgcHRGm5WA0PfRzuP0qBdpiKBeyLtEaQrIF2n8W/iFD//IvXVaN8J/+REHd8kw==",
+  "dgSpecHash": "XpC2XU3vLglICRlx448AkiBUZnDbq9ibfMlWu8O1Og8uG5OeFmZzysD9Kv5D6Xt7cqfYoZiPNmjLGH6wLs6DPQ==",
   "success": true,
   "projectFilePath": "/Users/asaikovski/projects/dotnet/dotnet-min-api-boilerplate/dotnet-minapi-boilerplate.csproj",
   "expectedPackageFiles": [
+    "/Users/asaikovski/.nuget/packages/aspnetcore.healthchecks.ui.client/8.0.0/aspnetcore.healthchecks.ui.client.8.0.0.nupkg.sha512",
+    "/Users/asaikovski/.nuget/packages/aspnetcore.healthchecks.ui.core/8.0.0/aspnetcore.healthchecks.ui.core.8.0.0.nupkg.sha512",
     "/Users/asaikovski/.nuget/packages/microsoft.aspnetcore.openapi/8.0.0/microsoft.aspnetcore.openapi.8.0.0.nupkg.sha512",
     "/Users/asaikovski/.nuget/packages/microsoft.extensions.apidescription.server/6.0.5/microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
     "/Users/asaikovski/.nuget/packages/microsoft.extensions.configuration/8.0.0/microsoft.extensions.configuration.8.0.0.nupkg.sha512",
@@ -13,6 +15,8 @@
     "/Users/asaikovski/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/8.0.0/microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
     "/Users/asaikovski/.nuget/packages/microsoft.extensions.dependencymodel/8.0.0/microsoft.extensions.dependencymodel.8.0.0.nupkg.sha512",
     "/Users/asaikovski/.nuget/packages/microsoft.extensions.diagnostics.abstractions/8.0.0/microsoft.extensions.diagnostics.abstractions.8.0.0.nupkg.sha512",
+    "/Users/asaikovski/.nuget/packages/microsoft.extensions.diagnostics.healthchecks/8.0.0/microsoft.extensions.diagnostics.healthchecks.8.0.0.nupkg.sha512",
+    "/Users/asaikovski/.nuget/packages/microsoft.extensions.diagnostics.healthchecks.abstractions/8.0.0/microsoft.extensions.diagnostics.healthchecks.abstractions.8.0.0.nupkg.sha512",
     "/Users/asaikovski/.nuget/packages/microsoft.extensions.fileproviders.abstractions/8.0.0/microsoft.extensions.fileproviders.abstractions.8.0.0.nupkg.sha512",
     "/Users/asaikovski/.nuget/packages/microsoft.extensions.hosting.abstractions/8.0.0/microsoft.extensions.hosting.abstractions.8.0.0.nupkg.sha512",
     "/Users/asaikovski/.nuget/packages/microsoft.extensions.logging/8.0.0/microsoft.extensions.logging.8.0.0.nupkg.sha512",
