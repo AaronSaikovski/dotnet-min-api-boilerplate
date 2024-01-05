@@ -11,14 +11,14 @@ public static class SampleEndpoints
     /// <param name="routes"></param>
     public static void RegisterSampleEndpoints(this IEndpointRouteBuilder routes)
     {
-        
+        //set routegroup builder
         var sampleRoutes = routes.MapGroup("/minapi/v1/");
         
         //Ping
         sampleRoutes.MapGet("/ping", () => "pong");
   
         
-        //Sample weather
+        //Sample weatherforecast
         var summaries = new[]
         {
             "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
@@ -40,7 +40,7 @@ public static class SampleEndpoints
             .WithOpenApi();
     }
     
-    record WeatherForecast(DateOnly Date, int TemperatureC, string? Summary)
+    private record WeatherForecast(DateOnly Date, int TemperatureC, string? Summary)
     {
         public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
     }

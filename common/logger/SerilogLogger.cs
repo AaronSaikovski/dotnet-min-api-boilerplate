@@ -1,5 +1,4 @@
 using Serilog;
-using Microsoft.Extensions.Configuration;
 
 namespace dotnet_minapi_boilerplate.common.logger;
 
