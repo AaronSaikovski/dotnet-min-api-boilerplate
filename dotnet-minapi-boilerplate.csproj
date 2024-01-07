@@ -5,6 +5,9 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <RootNamespace>dotnet_minapi_boilerplate</RootNamespace>
+<!--    <PublishAot>true</PublishAot>-->
+<!--    <EnableSdkContainerSupport>true</EnableSdkContainerSupport>-->
+<!--    <PublishProfile>DefaultContainer</PublishProfile>-->
   </PropertyGroup>  
   
   <ItemGroup>
