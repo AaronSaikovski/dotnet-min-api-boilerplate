@@ -51,6 +51,10 @@
               "target": "Package",
               "version": "[8.0.0, )"
             },
+            "Microsoft.NET.Build.Containers": {
+              "target": "Package",
+              "version": "[8.0.100, )"
+            },
             "Serilog.AspNetCore": {
               "target": "Package",
               "version": "[8.0.0, )"

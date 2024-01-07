@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "XpC2XU3vLglICRlx448AkiBUZnDbq9ibfMlWu8O1Og8uG5OeFmZzysD9Kv5D6Xt7cqfYoZiPNmjLGH6wLs6DPQ==",
+  "dgSpecHash": "PG+ks3cD5FqwfVZf0cGJI9t/srp+1pgGIwelvE47H/TJacVlAJL6WDZ+w3Q6lYKkbcxM3kvtQYMNlc6HsIjGXw==",
   "success": true,
   "projectFilePath": "/Users/asaikovski/projects/dotnet/dotnet-min-api-boilerplate/dotnet-minapi-boilerplate.csproj",
   "expectedPackageFiles": [
@@ -23,6 +23,7 @@
     "/Users/asaikovski/.nuget/packages/microsoft.extensions.logging.abstractions/8.0.0/microsoft.extensions.logging.abstractions.8.0.0.nupkg.sha512",
     "/Users/asaikovski/.nuget/packages/microsoft.extensions.options/8.0.0/microsoft.extensions.options.8.0.0.nupkg.sha512",
     "/Users/asaikovski/.nuget/packages/microsoft.extensions.primitives/8.0.0/microsoft.extensions.primitives.8.0.0.nupkg.sha512",
+    "/Users/asaikovski/.nuget/packages/microsoft.net.build.containers/8.0.100/microsoft.net.build.containers.8.0.100.nupkg.sha512",
     "/Users/asaikovski/.nuget/packages/microsoft.openapi/1.4.3/microsoft.openapi.1.4.3.nupkg.sha512",
     "/Users/asaikovski/.nuget/packages/serilog/3.1.1/serilog.3.1.1.nupkg.sha512",
     "/Users/asaikovski/.nuget/packages/serilog.aspnetcore/8.0.0/serilog.aspnetcore.8.0.0.nupkg.sha512",
