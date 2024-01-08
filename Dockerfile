@@ -13,12 +13,10 @@ COPY . ./
 RUN dotnet publish -c Release -o out
 
 # Build the runtime image
-FROM mcr.microsoft.com/dotnet/aspnet:8.0-alpine as runtime
+FROM mcr.microsoft.com/dotnet/aspnet:8.0-jammy-chiseled as runtime
+EXPOSE 8080
 WORKDIR /app
 COPY --from=build-env /app/out .
-
-# Expose the port your application will run on
-EXPOSE 8080/tcp
 
 #change this to your dll name
 ENTRYPOINT ["dotnet", "dotnet-minapi-boilerplate.dll"]
