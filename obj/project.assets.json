@@ -353,13 +353,6 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "Microsoft.NET.Build.Containers/8.0.100": {
-        "type": "package",
-        "build": {
-          "build/Microsoft.NET.Build.Containers.props": {},
-          "build/Microsoft.NET.Build.Containers.targets": {}
-        }
-      },
       "Microsoft.OpenApi/1.4.3": {
         "type": "package",
         "compile": {
@@ -1438,91 +1431,6 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "Microsoft.NET.Build.Containers/8.0.100": {
-      "sha512": "Ow9/XknHKTy9SDMfkabuWh0EBRfFYFtKW+OU2xscYUIde3Tv3eGhUKxsiA6g729yrwQ1Hf3L9uRqlXBUJrBzkw==",
-      "type": "package",
-      "path": "microsoft.net.build.containers/8.0.100",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "Icon.png",
-        "README.md",
-        "build/Microsoft.NET.Build.Containers.props",
-        "build/Microsoft.NET.Build.Containers.targets",
-        "containerize/Microsoft.DotNet.Cli.Utils.dll",
-        "containerize/Microsoft.Extensions.Configuration.Abstractions.dll",
-        "containerize/Microsoft.Extensions.Configuration.Binder.dll",
-        "containerize/Microsoft.Extensions.Configuration.dll",
-        "containerize/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
-        "containerize/Microsoft.Extensions.DependencyInjection.dll",
-        "containerize/Microsoft.Extensions.DependencyModel.dll",
-        "containerize/Microsoft.Extensions.Logging.Abstractions.dll",
-        "containerize/Microsoft.Extensions.Logging.Configuration.dll",
-        "containerize/Microsoft.Extensions.Logging.Console.dll",
-        "containerize/Microsoft.Extensions.Logging.dll",
-        "containerize/Microsoft.Extensions.Options.ConfigurationExtensions.dll",
-        "containerize/Microsoft.Extensions.Options.dll",
-        "containerize/Microsoft.Extensions.Primitives.dll",
-        "containerize/Microsoft.NET.Build.Containers.dll",
-        "containerize/Newtonsoft.Json.dll",
-        "containerize/NuGet.Common.dll",
-        "containerize/NuGet.Configuration.dll",
-        "containerize/NuGet.DependencyResolver.Core.dll",
-        "containerize/NuGet.Frameworks.dll",
-        "containerize/NuGet.LibraryModel.dll",
-        "containerize/NuGet.Packaging.dll",
-        "containerize/NuGet.ProjectModel.dll",
-        "containerize/NuGet.Protocol.dll",
-        "containerize/NuGet.Versioning.dll",
-        "containerize/System.CommandLine.dll",
-        "containerize/Valleysoft.DockerCredsProvider.dll",
-        "containerize/containerize.dll",
-        "containerize/containerize.runtimeconfig.json",
-        "microsoft.net.build.containers.8.0.100.nupkg.sha512",
-        "microsoft.net.build.containers.nuspec",
-        "tasks/net472/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
-        "tasks/net472/Microsoft.Extensions.DependencyInjection.dll",
-        "tasks/net472/Microsoft.Extensions.DependencyModel.dll",
-        "tasks/net472/Microsoft.Extensions.Logging.Abstractions.dll",
-        "tasks/net472/Microsoft.Extensions.Logging.dll",
-        "tasks/net472/Microsoft.Extensions.Options.dll",
-        "tasks/net472/Microsoft.Extensions.Primitives.dll",
-        "tasks/net472/Microsoft.NET.Build.Containers.dll",
-        "tasks/net472/Newtonsoft.Json.dll",
-        "tasks/net472/NuGet.Common.dll",
-        "tasks/net472/NuGet.Configuration.dll",
-        "tasks/net472/NuGet.DependencyResolver.Core.dll",
-        "tasks/net472/NuGet.Frameworks.dll",
-        "tasks/net472/NuGet.LibraryModel.dll",
-        "tasks/net472/NuGet.Packaging.Core.dll",
-        "tasks/net472/NuGet.Packaging.dll",
-        "tasks/net472/NuGet.ProjectModel.dll",
-        "tasks/net472/NuGet.Protocol.dll",
-        "tasks/net472/NuGet.Versioning.dll",
-        "tasks/net8.0/Microsoft.DotNet.Cli.Utils.dll",
-        "tasks/net8.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
-        "tasks/net8.0/Microsoft.Extensions.DependencyInjection.dll",
-        "tasks/net8.0/Microsoft.Extensions.DependencyModel.dll",
-        "tasks/net8.0/Microsoft.Extensions.Logging.Abstractions.dll",
-        "tasks/net8.0/Microsoft.Extensions.Logging.dll",
-        "tasks/net8.0/Microsoft.Extensions.Options.dll",
-        "tasks/net8.0/Microsoft.Extensions.Primitives.dll",
-        "tasks/net8.0/Microsoft.NET.Build.Containers.deps.json",
-        "tasks/net8.0/Microsoft.NET.Build.Containers.dll",
-        "tasks/net8.0/Newtonsoft.Json.dll",
-        "tasks/net8.0/NuGet.Common.dll",
-        "tasks/net8.0/NuGet.Configuration.dll",
-        "tasks/net8.0/NuGet.DependencyResolver.Core.dll",
-        "tasks/net8.0/NuGet.Frameworks.dll",
-        "tasks/net8.0/NuGet.LibraryModel.dll",
-        "tasks/net8.0/NuGet.Packaging.Core.dll",
-        "tasks/net8.0/NuGet.Packaging.dll",
-        "tasks/net8.0/NuGet.ProjectModel.dll",
-        "tasks/net8.0/NuGet.Protocol.dll",
-        "tasks/net8.0/NuGet.Versioning.dll",
-        "tasks/net8.0/Valleysoft.DockerCredsProvider.dll"
-      ]
-    },
     "Microsoft.OpenApi/1.4.3": {
       "sha512": "rURwggB+QZYcSVbDr7HSdhw/FELvMlriW10OeOzjPT7pstefMo7IThhtNtDudxbXhW+lj0NfX72Ka5EDsG8x6w==",
       "type": "package",
@@ -1992,7 +1900,6 @@
       "AspNetCore.HealthChecks.UI.Client >= 8.0.0",
       "Microsoft.AspNetCore.OpenApi >= 8.0.0",
       "Microsoft.Extensions.Configuration >= 8.0.0",
-      "Microsoft.NET.Build.Containers >= 8.0.100",
       "Serilog.AspNetCore >= 8.0.0",
       "Swashbuckle.AspNetCore >= 6.5.0"
     ]
@@ -2046,10 +1953,6 @@
           "Microsoft.Extensions.Configuration": {
             "target": "Package",
             "version": "[8.0.0, )"
-          },
-          "Microsoft.NET.Build.Containers": {
-            "target": "Package",
-            "version": "[8.0.100, )"
           },
           "Serilog.AspNetCore": {
             "target": "Package",
