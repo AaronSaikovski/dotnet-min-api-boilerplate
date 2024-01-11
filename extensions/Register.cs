@@ -1,8 +1,3 @@
-using Asp.Versioning;
-using minapi.boilerplate.middleware;
-using Microsoft.Extensions.Options;
-
-
 namespace minapi.boilerplate.extensions;
 
 //Source: https://blog.treblle.com/how-to-structure-your-minimal-api-in-net/

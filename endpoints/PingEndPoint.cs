@@ -8,10 +8,11 @@ public class PingEndpoint : IRegisterEndpoints
 {
     //Ref: https://blog.treblle.com/how-to-structure-your-minimal-api-in-net/
     
-    /// <summary>
-    /// RegisterEndpoint
-    /// </summary>
-    /// <param name="routes"></param>
+   /// <summary>
+   /// 
+   /// </summary>
+   /// <param name="routes"></param>
+   /// <param name="versionSet"></param>
    public static void RegisterEndpoints(IEndpointRouteBuilder routes, ApiVersionSet versionSet)
     {        
         // get  http://localhost:<PORT>>/ping?api-version=1.0

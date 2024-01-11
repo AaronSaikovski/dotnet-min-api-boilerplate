@@ -20,9 +20,10 @@ public class WeatherEndpoint : IRegisterEndpoints
 
 
     /// <summary>
-    /// RegisterEndpoint
+    /// 
     /// </summary>
     /// <param name="routes"></param>
+    /// <param name="versionSet"></param>
      public static void RegisterEndpoints(IEndpointRouteBuilder routes, ApiVersionSet versionSet)
     {
         
