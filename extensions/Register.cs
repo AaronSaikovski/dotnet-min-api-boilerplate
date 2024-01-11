@@ -25,20 +25,6 @@ public static class Register
     }
     #endregion
 
-    /// <summary>
-    /// RegisterApiVersions
-    /// </summary>
-    /// <param name="app"></param>
-    public static void RegisterApiVersions(this WebApplication app)
-    {
-        app.NewApiVersionSet()
-                .HasApiVersion(new ApiVersion(1.0))
-                .HasApiVersion(new ApiVersion(2.0))
-                .ReportApiVersions()
-                .Build();
-    }
-    
-
     #region RegisterMiddleware
     /// <summary>
     /// RegisterMiddleware
