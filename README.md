@@ -1,7 +1,14 @@
-# dotnet-minapi-boilerplate
+<div align="center">
 
-A `.Net 8.0` Minimal WebApi boilerplate starter project. Includes Swagger, Serilog and Docker support. This is designed to be as bare bones as possible to get you started with minimal APIs in .Net 8.0.
+# dotnet-min-api-boilerplate
+
+[![Build Status](https://github.com/AaronSaikovski/dotnet-min-api-boilerplate/workflows/build/badge.svg)](https://github.com/AaronSaikovski/dotnet-min-api-boilerplate/actions)
+
+
+An `ASP.Net Core 8.0` Minimal WebApi boilerplate starter project. Includes Swagger, Serilog and Docker support. This is designed to be as bare bones as possible to get you started with minimal APIs in .Net 8.0.
 The goal of this project is to be an way to kick start your .Net 8.0 WebApi projects to get you going quicker. The goal is to be as lean and trimmed as possible to make things easy when building Web APIs in .Net 8.0.
+</div>
+
 
 # How to get started
 
@@ -39,7 +46,7 @@ The goal of this project is to be an way to kick start your .Net 8.0 WebApi proj
 
 1. endpoints
 
-   - This folder is where you set your endpoints via routes - refer to SampleEndpoints.cs for some examples of this.
+   - This folder is where you set your endpoints via routes - refer to SampleEndpoints.cs for some examples of this. There is a new interface `IRegisterEndpoints` that any new endpoints will need to implement to be able to be used. Also there are examples of the API versioning to show how to version your APIs between releases.
 
 2. extensions
 
