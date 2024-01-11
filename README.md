@@ -33,6 +33,7 @@ The goal of this project is to be an way to kick start your .Net 8.0 WebApi proj
 - Unit tests
 - Container support with [docker](Dockerfile) and [docker-compose](docker-compose.yml)
 - NuGet Central package management (CPM)
+- API Versioning - https://www.nuget.org/packages/Asp.Versioning.Http
 
 # Project Structure
 
@@ -73,11 +74,10 @@ The goal of this project is to be an way to kick start your .Net 8.0 WebApi proj
 
 # Future developments
 
-1. API Versioning support.
-2. OpenTelemetry integration.
-3. Auth and Authorisation support.
-4. Database support for MS SQL - Dapper or Entity Framework.
-5. Ahead of Time (AOT) native compilation support.
+1. OpenTelemetry integration.
+2. Auth and Authorisation support.
+3. Database support for MS SQL - Dapper or Entity Framework.
+4. Ahead of Time (AOT) native compilation support.
 
 # If you like it, give it a Star
 

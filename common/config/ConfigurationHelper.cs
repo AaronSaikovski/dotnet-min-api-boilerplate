@@ -10,10 +10,10 @@ public static class ConfigurationHelper
     #region fields
     
     //API Key
-    public static string? DataApiKey { get; }
+    public static string? DataApiKey { get; set;}
     
     //Active Register
-    public static IConfiguration ActiveConfiguration { get; }
+    public static IConfiguration ActiveConfiguration { get; set;}
     
     #endregion
 
@@ -24,21 +24,15 @@ public static class ConfigurationHelper
     static ConfigurationHelper()
     {
         //Toggle if DEBUG flag set
-        #if DEBUG
-                                
-                //Load config - DEBUG
-                var configuration = new ConfigurationBuilder()
-                    .AddJsonFile("appsettings.Development.json", optional: true, reloadOnChange: true)
-                    .AddEnvironmentVariables()
-                    .Build();
+ //Load config - DEBUG
+        var configuration = new ConfigurationBuilder()                    
+            .AddEnvironmentVariables()                   
+        #if DEBUG 
+            .AddJsonFile("appsettings.Development.json", optional: true, reloadOnChange: true)            
         #else
-                       
-                //Load config - RELEASE
-                var configuration = new ConfigurationBuilder()
-                    .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true)
-                    .AddEnvironmentVariables()
-                    .Build();
+            .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true)
         #endif
+        .Build();
             
             
         //Set the active configuration

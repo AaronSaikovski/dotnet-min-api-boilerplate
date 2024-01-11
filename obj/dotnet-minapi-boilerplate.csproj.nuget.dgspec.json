@@ -1,26 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "/Users/asaikovski/projects/dotnet/dotnet-min-api-boilerplate/dotnet-minapi-boilerplate.csproj": {}
+    "/Users/sr60gm/temp/projs/dotnet-min-api-boilerplate/dotnet-minapi-boilerplate.csproj": {}
   },
   "projects": {
-    "/Users/asaikovski/projects/dotnet/dotnet-min-api-boilerplate/dotnet-minapi-boilerplate.csproj": {
-      "version": "1.0.0",
+    "/Users/sr60gm/temp/projs/dotnet-min-api-boilerplate/dotnet-minapi-boilerplate.csproj": {
+      "version": "1.2.0",
       "restore": {
-        "projectUniqueName": "/Users/asaikovski/projects/dotnet/dotnet-min-api-boilerplate/dotnet-minapi-boilerplate.csproj",
+        "projectUniqueName": "/Users/sr60gm/temp/projs/dotnet-min-api-boilerplate/dotnet-minapi-boilerplate.csproj",
         "projectName": "dotnet-minapi-boilerplate",
-        "projectPath": "/Users/asaikovski/projects/dotnet/dotnet-min-api-boilerplate/dotnet-minapi-boilerplate.csproj",
-        "packagesPath": "/Users/asaikovski/.nuget/packages/",
-        "outputPath": "/Users/asaikovski/projects/dotnet/dotnet-min-api-boilerplate/obj/",
+        "projectPath": "/Users/sr60gm/temp/projs/dotnet-min-api-boilerplate/dotnet-minapi-boilerplate.csproj",
+        "packagesPath": "/Users/sr60gm/.nuget/packages/",
+        "outputPath": "/Users/sr60gm/temp/projs/dotnet-min-api-boilerplate/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/asaikovski/.nuget/NuGet/NuGet.Config"
+          "/Users/sr60gm/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "/usr/local/share/dotnet/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -39,6 +38,18 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Asp.Versioning.Http": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Asp.Versioning.Mvc": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Asp.Versioning.Mvc.ApiExplorer": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
             "AspNetCore.HealthChecks.UI.Client": {
               "target": "Package",
               "version": "[8.0.0, )"
@@ -79,7 +90,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.101/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

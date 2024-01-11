@@ -1,4 +1,7 @@
+using Asp.Versioning;
 using dotnet_minapi_boilerplate.middleware;
+using Microsoft.Extensions.Options;
+
 
 namespace dotnet_minapi_boilerplate.extensions;
 
@@ -22,6 +25,20 @@ public static class Register
     }
     #endregion
 
+    /// <summary>
+    /// RegisterApiVersions
+    /// </summary>
+    /// <param name="app"></param>
+    public static void RegisterApiVersions(this WebApplication app)
+    {
+        app.NewApiVersionSet()
+                .HasApiVersion(new ApiVersion(1.0))
+                .HasApiVersion(new ApiVersion(2.0))
+                .ReportApiVersions()
+                .Build();
+    }
+    
+
     #region RegisterMiddleware
     /// <summary>
     /// RegisterMiddleware
@@ -35,7 +52,7 @@ public static class Register
                 .UseSwaggerUI();
         }
 
-        app.UseHttpsRedirection();
+        app.UseHttpsRedirection(); 
         
         //Uncomment this if using API Key middleware
         //app.UseMiddleware<ApiKeyMiddleware>();

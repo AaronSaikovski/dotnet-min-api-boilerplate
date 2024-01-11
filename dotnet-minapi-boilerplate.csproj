@@ -2,14 +2,17 @@
 
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
+    <Version>1.2.0</Version>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <RootNamespace>dotnet_minapi_boilerplate</RootNamespace>
-    <AssemblyVersion>1.0.0</AssemblyVersion>
-    <FileVersion>1.0.0</FileVersion>
+    <InvariantGlobalization>true</InvariantGlobalization>    
   </PropertyGroup>  
   
   <ItemGroup>
+    <PackageReference Include="Asp.Versioning.Http" Version="8.0.0" />
+    <PackageReference Include="Asp.Versioning.Mvc" Version="8.0.0" />
+    <PackageReference Include="Asp.Versioning.Mvc.ApiExplorer" Version="8.0.0" />
     <PackageReference Include="AspNetCore.HealthChecks.UI.Client" Version="8.0.0" />
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="8.0.0" />
     <PackageReference Include="Microsoft.Extensions.Configuration" Version="8.0.0" />

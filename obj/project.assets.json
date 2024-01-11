@@ -2,6 +2,73 @@
   "version": 3,
   "targets": {
     "net8.0": {
+      "Asp.Versioning.Abstractions/8.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Primitives": "8.0.0"
+        },
+        "compile": {
+          "lib/net8.0/Asp.Versioning.Abstractions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Asp.Versioning.Abstractions.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Asp.Versioning.Http/8.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Asp.Versioning.Abstractions": "8.0.0"
+        },
+        "compile": {
+          "lib/net8.0/Asp.Versioning.Http.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Asp.Versioning.Http.dll": {
+            "related": ".xml"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
+      "Asp.Versioning.Mvc/8.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Asp.Versioning.Http": "8.0.0"
+        },
+        "compile": {
+          "lib/net8.0/Asp.Versioning.Mvc.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Asp.Versioning.Mvc.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Asp.Versioning.Mvc.ApiExplorer/8.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Asp.Versioning.Mvc": "8.0.0"
+        },
+        "compile": {
+          "lib/net8.0/Asp.Versioning.Mvc.ApiExplorer.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Asp.Versioning.Mvc.ApiExplorer.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "AspNetCore.HealthChecks.UI.Client/8.0.0": {
         "type": "package",
         "dependencies": {
@@ -649,6 +716,74 @@
     }
   },
   "libraries": {
+    "Asp.Versioning.Abstractions/8.0.0": {
+      "sha512": "YkuUcrqi862hw/p8dKCsfOQ6y2mWTfjKHuQoFUA9GOaoBGZsu/FzsoBm6z28WkQIlXCZR1SG7safgHj2WCO/lw==",
+      "type": "package",
+      "path": "asp.versioning.abstractions/8.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "README.md",
+        "asp.versioning.abstractions.8.0.0.nupkg.sha512",
+        "asp.versioning.abstractions.nuspec",
+        "icon.png",
+        "lib/net8.0/Asp.Versioning.Abstractions.dll",
+        "lib/net8.0/Asp.Versioning.Abstractions.xml",
+        "lib/netstandard1.0/Asp.Versioning.Abstractions.dll",
+        "lib/netstandard1.0/Asp.Versioning.Abstractions.xml",
+        "lib/netstandard2.0/Asp.Versioning.Abstractions.dll",
+        "lib/netstandard2.0/Asp.Versioning.Abstractions.xml"
+      ]
+    },
+    "Asp.Versioning.Http/8.0.0": {
+      "sha512": "pxHp26pXoCCIFUxFZz4UWPuYDFJ3PB0QpTpC4QRoLhu90eE3FBs0zmDeRO6Sb3y6hMnk6efdQHGbyCzd7XQIrA==",
+      "type": "package",
+      "path": "asp.versioning.http/8.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "README.md",
+        "asp.versioning.http.8.0.0.nupkg.sha512",
+        "asp.versioning.http.nuspec",
+        "icon.png",
+        "lib/net8.0/Asp.Versioning.Http.dll",
+        "lib/net8.0/Asp.Versioning.Http.xml"
+      ]
+    },
+    "Asp.Versioning.Mvc/8.0.0": {
+      "sha512": "zxuA7J6HewdjFF/9Cfb6VWovBTj3MdmLg6PztInratlXGpJ+BZjQzoT8FEMOurzmCxbEFPlQmeMW7b1iJKfsdg==",
+      "type": "package",
+      "path": "asp.versioning.mvc/8.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "README.md",
+        "asp.versioning.mvc.8.0.0.nupkg.sha512",
+        "asp.versioning.mvc.nuspec",
+        "icon.png",
+        "lib/net8.0/Asp.Versioning.Mvc.dll",
+        "lib/net8.0/Asp.Versioning.Mvc.xml"
+      ]
+    },
+    "Asp.Versioning.Mvc.ApiExplorer/8.0.0": {
+      "sha512": "jrNwSdQ/FNGbwnb6SpNRuAZpJ5qrlSrEwOWaXFLc8vCC14bo/2ihwJ3IJWRbSnijLUyB9j9eKFVcVi1l8ShzZw==",
+      "type": "package",
+      "path": "asp.versioning.mvc.apiexplorer/8.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "README.md",
+        "asp.versioning.mvc.apiexplorer.8.0.0.nupkg.sha512",
+        "asp.versioning.mvc.apiexplorer.nuspec",
+        "icon.png",
+        "lib/net8.0/Asp.Versioning.Mvc.ApiExplorer.dll",
+        "lib/net8.0/Asp.Versioning.Mvc.ApiExplorer.xml"
+      ]
+    },
     "AspNetCore.HealthChecks.UI.Client/8.0.0": {
       "sha512": "QT3hgIYPpoI4LDKVGBI2zpi6COnJOjTiYXhgEQK67vZU+g0mg+Z7JuT4PRHj3hJ5M98yPnnPlkz2VVaGZYEvaQ==",
       "type": "package",
@@ -1897,6 +2032,9 @@
   },
   "projectFileDependencyGroups": {
     "net8.0": [
+      "Asp.Versioning.Http >= 8.0.0",
+      "Asp.Versioning.Mvc >= 8.0.0",
+      "Asp.Versioning.Mvc.ApiExplorer >= 8.0.0",
       "AspNetCore.HealthChecks.UI.Client >= 8.0.0",
       "Microsoft.AspNetCore.OpenApi >= 8.0.0",
       "Microsoft.Extensions.Configuration >= 8.0.0",
@@ -1905,25 +2043,24 @@
     ]
   },
   "packageFolders": {
-    "/Users/asaikovski/.nuget/packages/": {}
+    "/Users/sr60gm/.nuget/packages/": {}
   },
   "project": {
-    "version": "1.0.0",
+    "version": "1.2.0",
     "restore": {
-      "projectUniqueName": "/Users/asaikovski/projects/dotnet/dotnet-min-api-boilerplate/dotnet-minapi-boilerplate.csproj",
+      "projectUniqueName": "/Users/sr60gm/temp/projs/dotnet-min-api-boilerplate/dotnet-minapi-boilerplate.csproj",
       "projectName": "dotnet-minapi-boilerplate",
-      "projectPath": "/Users/asaikovski/projects/dotnet/dotnet-min-api-boilerplate/dotnet-minapi-boilerplate.csproj",
-      "packagesPath": "/Users/asaikovski/.nuget/packages/",
-      "outputPath": "/Users/asaikovski/projects/dotnet/dotnet-min-api-boilerplate/obj/",
+      "projectPath": "/Users/sr60gm/temp/projs/dotnet-min-api-boilerplate/dotnet-minapi-boilerplate.csproj",
+      "packagesPath": "/Users/sr60gm/.nuget/packages/",
+      "outputPath": "/Users/sr60gm/temp/projs/dotnet-min-api-boilerplate/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/asaikovski/.nuget/NuGet/NuGet.Config"
+        "/Users/sr60gm/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
-        "/usr/local/share/dotnet/library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -1942,6 +2079,18 @@
       "net8.0": {
         "targetAlias": "net8.0",
         "dependencies": {
+          "Asp.Versioning.Http": {
+            "target": "Package",
+            "version": "[8.0.0, )"
+          },
+          "Asp.Versioning.Mvc": {
+            "target": "Package",
+            "version": "[8.0.0, )"
+          },
+          "Asp.Versioning.Mvc.ApiExplorer": {
+            "target": "Package",
+            "version": "[8.0.0, )"
+          },
           "AspNetCore.HealthChecks.UI.Client": {
             "target": "Package",
             "version": "[8.0.0, )"
@@ -1982,7 +2131,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.100/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.101/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
