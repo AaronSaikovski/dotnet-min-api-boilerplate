@@ -68,7 +68,7 @@ The goal of this project is to be an way to kick start your .Net 8.0 WebApi proj
 
 # Adopting to your project
 
-1. Remove/Rename all `dotnet_minapi_boilerplate` references and rename to your project needs.
+1. Remove/Rename all `minapi.boilerplate` references and rename to your project needs.
 2. Rename solution, projects, namespaces, to suit.
 3. Change the dockerfile and docker-compose.yml to your new csproj/folder names.
 

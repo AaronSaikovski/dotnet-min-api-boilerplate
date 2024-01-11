@@ -1,7 +1,7 @@
 ﻿
 using Asp.Versioning.Builder;
 
-namespace dotnet_minapi_boilerplate.endpoints;
+namespace minapi.boilerplate.endpoints;
 
 /// <summary>
 /// Register Endpoint interface

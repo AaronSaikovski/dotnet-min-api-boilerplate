@@ -1,6 +1,6 @@
 
 
-namespace dotnet_minapi_boilerplate.common.config;
+namespace minapi.boilerplate.common.config;
 
 /// <summary>
 /// Register helper..reads from appsettings file per environment

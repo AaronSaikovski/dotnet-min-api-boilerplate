@@ -1,6 +1,6 @@
 using Serilog;
 
-namespace dotnet_minapi_boilerplate.common.logger;
+namespace minapi.boilerplate.common.logger;
 
 /// <summary>
 /// Implements logging via Serilog

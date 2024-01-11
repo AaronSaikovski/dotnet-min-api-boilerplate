@@ -1,4 +1,4 @@
-namespace dotnet_minapi_boilerplate.middleware;
+namespace minapi.boilerplate.middleware;
 
 //Ref: https://www.c-sharpcorner.com/article/using-api-key-authentication-to-secure-asp-net-core-web-api/
 

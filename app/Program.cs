@@ -1,8 +1,9 @@
 
-using dotnet_minapi_boilerplate.common.logger;
-using dotnet_minapi_boilerplate.common.config;
-using dotnet_minapi_boilerplate.extensions;
-using dotnet_minapi_boilerplate.endpoints;
+using minapi.boilerplate.common.logger;
+using minapi.boilerplate.common.config;
+using minapi.boilerplate.extensions;
+using minapi.boilerplate.endpoints;
+
 using HealthChecks.UI.Client;
 using Microsoft.AspNetCore.Diagnostics.HealthChecks;
 using System.Diagnostics;
