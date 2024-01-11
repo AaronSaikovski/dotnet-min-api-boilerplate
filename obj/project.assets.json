@@ -593,6 +593,9 @@
           }
         }
       },
+      "SonarAnalyzer.CSharp/9.16.0.82469": {
+        "type": "package"
+      },
       "Swashbuckle.AspNetCore/6.5.0": {
         "type": "package",
         "dependencies": {
@@ -1802,6 +1805,26 @@
         "serilog.sinks.file.nuspec"
       ]
     },
+    "SonarAnalyzer.CSharp/9.16.0.82469": {
+      "sha512": "Lt8Ogx+O3fowiELb9Km/5LRW0GjgIccompIv8gOK8PDdAgh2ycWTfe/9RORmym2dsqmFNR3GqcB42vx7lLaqJg==",
+      "type": "package",
+      "path": "sonaranalyzer.csharp/9.16.0.82469",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "analyzers/Google.Protobuf.dll",
+        "analyzers/SonarAnalyzer.CFG.dll",
+        "analyzers/SonarAnalyzer.CSharp.dll",
+        "analyzers/SonarAnalyzer.dll",
+        "images/sonarsource_64.png",
+        "license/THIRD-PARTY-NOTICES.txt",
+        "sonaranalyzer.csharp.9.16.0.82469.nupkg.sha512",
+        "sonaranalyzer.csharp.nuspec",
+        "tools/install.ps1",
+        "tools/uninstall.ps1"
+      ]
+    },
     "Swashbuckle.AspNetCore/6.5.0": {
       "sha512": "FK05XokgjgwlCI6wCT+D4/abtQkL1X1/B9Oas6uIwHFmYrIO9WUD5aLC9IzMs9GnHfUXOtXZ2S43gN1mhs5+aA==",
       "type": "package",
@@ -2039,6 +2062,7 @@
       "Microsoft.AspNetCore.OpenApi >= 8.0.0",
       "Microsoft.Extensions.Configuration >= 8.0.0",
       "Serilog.AspNetCore >= 8.0.0",
+      "SonarAnalyzer.CSharp >= 9.16.0.82469",
       "Swashbuckle.AspNetCore >= 6.5.0"
     ]
   },
@@ -2107,6 +2131,12 @@
           "Serilog.AspNetCore": {
             "target": "Package",
             "version": "[8.0.0, )"
+          },
+          "SonarAnalyzer.CSharp": {
+            "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+            "suppressParent": "All",
+            "target": "Package",
+            "version": "[9.16.0.82469, )"
           },
           "Swashbuckle.AspNetCore": {
             "target": "Package",

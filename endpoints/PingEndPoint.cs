@@ -17,20 +17,23 @@ public class PingEndpoint : IRegisterEndpoints
     {        
         // get  http://localhost:<PORT>>/ping?api-version=1.0
         //Ping -> Pong
-        routes.MapGet( "/ping", () => 
-        "pong"
-        )
-        .WithApiVersionSet(versionSet)
-        .MapToApiVersion(1.0);
+        routes.MapGet("/ping", () =>
+                "pong"
+            )
+            .WithApiVersionSet(versionSet)
+            .MapToApiVersion(1.0)
+            .WithName("ping")
+            .WithOpenApi();
 
 
         // get  http://localhost:<PORT>>/ping?api-version=2.0
         //Ping -> Pong
-        routes.MapGet( "/ping", () => 
-        "pong-v2"
-        )
-        .WithApiVersionSet(versionSet)
-        .MapToApiVersion(2.0);
- 
+        // routes.MapGet( "/ping", () => 
+        // "pong-v2"
+        // )
+        // .WithApiVersionSet(versionSet)
+        // .MapToApiVersion(2.0)
+        // .WithName("ping");
+
     }
 }

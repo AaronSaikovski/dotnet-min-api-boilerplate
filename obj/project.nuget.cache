@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "/ugiBWxhwd4p8bT1dXylmihUdwWnyPNHFxTaw93ubKbjioSONFu7Zr32ryNC/tRmqT/JrvpkQEGBkGnT02Zj7Q==",
+  "dgSpecHash": "Fqoso/T1Pufr862Et/lhk95Kr/7gYaXEr4MJ0vDp/r9C7NItxW6CyquRH33MezyUkqF+MTdnADOko4pu7/wJzw==",
   "success": true,
   "projectFilePath": "/Users/asaikovski/projects/dotnet/dotnet-min-api-boilerplate/dotnet-minapi-boilerplate.csproj",
   "expectedPackageFiles": [
@@ -37,6 +37,7 @@
     "/Users/asaikovski/.nuget/packages/serilog.sinks.console/5.0.0/serilog.sinks.console.5.0.0.nupkg.sha512",
     "/Users/asaikovski/.nuget/packages/serilog.sinks.debug/2.0.0/serilog.sinks.debug.2.0.0.nupkg.sha512",
     "/Users/asaikovski/.nuget/packages/serilog.sinks.file/5.0.0/serilog.sinks.file.5.0.0.nupkg.sha512",
+    "/Users/asaikovski/.nuget/packages/sonaranalyzer.csharp/9.16.0.82469/sonaranalyzer.csharp.9.16.0.82469.nupkg.sha512",
     "/Users/asaikovski/.nuget/packages/swashbuckle.aspnetcore/6.5.0/swashbuckle.aspnetcore.6.5.0.nupkg.sha512",
     "/Users/asaikovski/.nuget/packages/swashbuckle.aspnetcore.swagger/6.5.0/swashbuckle.aspnetcore.swagger.6.5.0.nupkg.sha512",
     "/Users/asaikovski/.nuget/packages/swashbuckle.aspnetcore.swaggergen/6.5.0/swashbuckle.aspnetcore.swaggergen.6.5.0.nupkg.sha512",
