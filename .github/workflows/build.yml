@@ -26,8 +26,8 @@ jobs:
       - name: Build solution
         run: dotnet build -c Debug
 
-      - name: Publish
-        run: dotnet publish -c Release --no-build --no-restore
+      # - name: Publish
+      #   run: dotnet publish -c Release --no-build --no-restore
 
       # - name: Run tests
       #   run: dotnet test -c Debug --no-build --no-restore
