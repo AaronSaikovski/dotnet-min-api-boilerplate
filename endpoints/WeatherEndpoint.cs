@@ -35,7 +35,7 @@ public class WeatherEndpoint : IRegisterEndpoints
 
         //Gets the weather forecast
         //get http://localhost:<PORT>/weatherforecast?api-version=1.0
-        routes.MapGet("/weatherforecast", () =>
+        routes.MapGet("/api/weatherforecast", () =>
             {
                 var forecast = Enumerable.Range(1, 5).Select(index =>
                         new WeatherForecast
