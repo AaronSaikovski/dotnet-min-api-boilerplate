@@ -8,6 +8,6 @@ namespace minapi.boilerplate.endpoints;
 /// </summary>
 public interface IRegisterEndpoints
 {
-    abstract static void RegisterEndpoints(IEndpointRouteBuilder app, ApiVersionSet versionSet);
+    static abstract void RegisterEndpoints(IEndpointRouteBuilder app, ApiVersionSet versionSet);
     
 }

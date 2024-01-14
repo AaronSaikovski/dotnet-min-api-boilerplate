@@ -11,13 +11,13 @@ public class PingEndpoint : IRegisterEndpoints
    /// <summary>
    /// 
    /// </summary>
-   /// <param name="routes"></param>
+   /// <param name="app"></param>
    /// <param name="versionSet"></param>
-   public static void RegisterEndpoints(IEndpointRouteBuilder routes, ApiVersionSet versionSet)
+   public static void RegisterEndpoints(IEndpointRouteBuilder app, ApiVersionSet versionSet)
     {        
         // get  http://localhost:<PORT>>/api/ping?api-version=1.0
         //Ping -> Pong
-        routes.MapGet("/api/ping", () =>
+        app.MapGet("/api/ping", () =>
                 "pong-v1"
             )
             .WithApiVersionSet(versionSet)
@@ -27,7 +27,7 @@ public class PingEndpoint : IRegisterEndpoints
 
 
         // get  http://localhost:<PORT>>/ping?api-version=2.0
-        routes.MapGet("/api/ping", () =>
+        app.MapGet("/api/ping", () =>
                 "pong-v2"
             )
             .WithApiVersionSet(versionSet)

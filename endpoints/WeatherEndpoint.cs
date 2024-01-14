@@ -22,9 +22,9 @@ public class WeatherEndpoint : IRegisterEndpoints
     /// <summary>
     /// 
     /// </summary>
-    /// <param name="routes"></param>
+    /// <param name="app"></param>
     /// <param name="versionSet"></param>
-     public static void RegisterEndpoints(IEndpointRouteBuilder routes, ApiVersionSet versionSet)
+     public static void RegisterEndpoints(IEndpointRouteBuilder app, ApiVersionSet versionSet)
     {
         
         //Sample weatherforecast
@@ -34,8 +34,8 @@ public class WeatherEndpoint : IRegisterEndpoints
         };
 
         //Gets the weather forecast
-        //get http://localhost:<PORT>/weatherforecast?api-version=1.0
-        routes.MapGet("/api/weatherforecast", () =>
+        //get http://localhost:<PORT>/api/weatherforecast?api-version=1.0
+        app.MapGet("/api/weatherforecast", () =>
             {
                 var forecast = Enumerable.Range(1, 5).Select(index =>
                         new WeatherForecast
