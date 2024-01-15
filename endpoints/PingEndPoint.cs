@@ -4,7 +4,7 @@ using Asp.Versioning.Builder;
 namespace minapi.boilerplate.endpoints;
 
 
-public class PingEndpoint : IRegisterEndpoints
+public sealed class PingEndpoint : IRegisterEndpoints
 {
     //Ref: https://blog.treblle.com/how-to-structure-your-minimal-api-in-net/
     

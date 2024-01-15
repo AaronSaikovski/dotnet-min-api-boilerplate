@@ -4,7 +4,7 @@ using Asp.Versioning.Builder;
 
 namespace minapi.boilerplate.endpoints;
 
-public class WeatherEndpoint : IRegisterEndpoints
+public sealed class WeatherEndpoint : IRegisterEndpoints
 {
 
     /// <summary>
