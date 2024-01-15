@@ -1,5 +1,5 @@
 # Use the official .NET Core SDK as a parent image
-FROM --platform=$BUILDPLATFORM  mcr.microsoft.com/dotnet/sdk:8.0-jammy AS build-env
+FROM --platform=$BUILDPLATFORM mcr.microsoft.com/dotnet/sdk:8.0-jammy AS build-env
 WORKDIR /app
 
 # Copy the project file and restore any dependencies (use .csproj for the project name)
@@ -17,6 +17,4 @@ FROM mcr.microsoft.com/dotnet/aspnet:8.0-jammy-chiseled as runtime
 EXPOSE 8080
 WORKDIR /app
 COPY --from=build-env /app/out .
-
-#change this to your dll name
-ENTRYPOINT ["dotnet", "dotnet-minapi-boilerplate.dll"]
+ENTRYPOINT ["./dotnet-minapi-boilerplate"]
