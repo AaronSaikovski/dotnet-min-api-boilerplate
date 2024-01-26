@@ -17,7 +17,6 @@ var startTime = Stopwatch.GetTimestamp();
 var logger = new SerilogLogger(ConfigurationHelper.ActiveConfiguration);
 
 
-
 //Sample logger usage - https://github.com/serilog/serilog-aspnetcore
 try
 {

@@ -15,7 +15,7 @@ public sealed class PingEndpoint : IRegisterEndpoints
    /// <param name="versionSet"></param>
    public static void RegisterEndpoints(IEndpointRouteBuilder app, ApiVersionSet versionSet)
     {        
-        // get  http://localhost:<PORT>>/api/ping?api-version=1.0
+        // get  http://localhost:<PORT>/api/ping?api-version=1.0
         //Ping -> Pong
         app.MapGet("/api/ping", () =>
                 "pong-v1"

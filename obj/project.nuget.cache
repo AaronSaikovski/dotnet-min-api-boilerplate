@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "Fqoso/T1Pufr862Et/lhk95Kr/7gYaXEr4MJ0vDp/r9C7NItxW6CyquRH33MezyUkqF+MTdnADOko4pu7/wJzw==",
+  "dgSpecHash": "LLqwJwzJw9gje5za4xmAh+ofvG660JyEgCh8A443Mc3Z6WMNuqGtU/elFg3hvzln204bnsEQVSciH313N0Pjzw==",
   "success": true,
   "projectFilePath": "/Users/asaikovski/projects/dotnet/dotnet-min-api-boilerplate/dotnet-minapi-boilerplate.csproj",
   "expectedPackageFiles": [
