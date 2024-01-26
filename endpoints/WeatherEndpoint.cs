@@ -4,7 +4,7 @@ using Asp.Versioning.Builder;
 
 namespace minapi.boilerplate.endpoints;
 
-public sealed class WeatherEndpoint : IRegisterEndpoints
+internal sealed class WeatherEndpoint : IRegisterEndpoint
 {
 
     /// <summary>
@@ -24,7 +24,7 @@ public sealed class WeatherEndpoint : IRegisterEndpoints
     /// </summary>
     /// <param name="app"></param>
     /// <param name="versionSet"></param>
-     public static void RegisterEndpoints(IEndpointRouteBuilder app, ApiVersionSet versionSet)
+     public static void RegisterEndpoint(IEndpointRouteBuilder app, ApiVersionSet versionSet)
     {
         
         //Sample weatherforecast

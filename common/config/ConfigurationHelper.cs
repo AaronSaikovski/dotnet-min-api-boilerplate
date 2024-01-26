@@ -3,7 +3,7 @@
 namespace minapi.boilerplate.common.config;
 
 /// <summary>
-/// Register helper..reads from appsettings file per environment
+/// Services helper..reads from appsettings file per environment
 /// </summary>
 public static class ConfigurationHelper
 {
@@ -12,7 +12,7 @@ public static class ConfigurationHelper
     //API Key
     public static string? DataApiKey { get; set;}
     
-    //Active Register
+    //Active Services
     public static IConfiguration ActiveConfiguration { get; set;}
     
     #endregion

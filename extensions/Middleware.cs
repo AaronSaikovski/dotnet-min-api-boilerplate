@@ -1,3 +1,4 @@
+
 namespace minapi.boilerplate.extensions;
 
 //Source: https://blog.treblle.com/how-to-structure-your-minimal-api-in-net/
@@ -5,21 +6,8 @@ namespace minapi.boilerplate.extensions;
 /// <summary>
 /// RegisterServices
 /// </summary>
-public static class Register
+public static class Middleware
 {
-    #region RegisterServices
-    /// <summary>
-    /// RegisterServices
-    /// </summary>
-    /// <param name="builder"></param>
-    public static void RegisterServices(this WebApplicationBuilder builder)
-    {
-        builder.Services
-            .AddEndpointsApiExplorer()
-            .AddSwaggerGen();
-    }
-    #endregion
-
     #region RegisterMiddleware
     /// <summary>
     /// RegisterMiddleware

@@ -4,7 +4,7 @@ using Asp.Versioning.Builder;
 namespace minapi.boilerplate.endpoints;
 
 
-public sealed class PingEndpoint : IRegisterEndpoints
+internal sealed class PingEndpoint : IRegisterEndpoint
 {
     //Ref: https://blog.treblle.com/how-to-structure-your-minimal-api-in-net/
     
@@ -13,7 +13,7 @@ public sealed class PingEndpoint : IRegisterEndpoints
    /// </summary>
    /// <param name="app"></param>
    /// <param name="versionSet"></param>
-   public static void RegisterEndpoints(IEndpointRouteBuilder app, ApiVersionSet versionSet)
+   public static void RegisterEndpoint(IEndpointRouteBuilder app, ApiVersionSet versionSet)
     {        
         // get  http://localhost:<PORT>/api/ping?api-version=1.0
         //Ping -> Pong
