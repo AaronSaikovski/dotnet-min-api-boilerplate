@@ -24,7 +24,7 @@ public static class Middleware
         app.UseHttpsRedirection(); 
         
         //Uncomment this if using API Key middleware
-        //app.UseMiddleware<ApiKeyMiddleware>();
+        //main.UseMiddleware<ApiKeyMiddleware>();
     }
     #endregion
 }

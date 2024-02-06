@@ -26,7 +26,7 @@ internal sealed class PingEndpoint : IRegisterEndpoint
             .WithOpenApi();
 
 
-        // get  http://localhost:<PORT>>/ping?api-version=2.0
+        // get  http://localhost:<PORT>>/api/ping?api-version=2.0
         app.MapGet("/api/ping", () =>
                 "pong-v2"
             )
