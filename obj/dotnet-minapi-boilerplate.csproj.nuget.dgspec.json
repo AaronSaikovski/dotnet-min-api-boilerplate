@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/asaikovski/projects/dotnet/dotnet-min-api-boilerplate/dotnet-minapi-boilerplate.csproj": {}
+    "/Users/asaikovski/Developer/dotnet/dotnet-min-api-boilerplate/dotnet-minapi-boilerplate.csproj": {}
   },
   "projects": {
-    "/Users/asaikovski/projects/dotnet/dotnet-min-api-boilerplate/dotnet-minapi-boilerplate.csproj": {
+    "/Users/asaikovski/Developer/dotnet/dotnet-min-api-boilerplate/dotnet-minapi-boilerplate.csproj": {
       "version": "1.2.0",
       "restore": {
-        "projectUniqueName": "/Users/asaikovski/projects/dotnet/dotnet-min-api-boilerplate/dotnet-minapi-boilerplate.csproj",
+        "projectUniqueName": "/Users/asaikovski/Developer/dotnet/dotnet-min-api-boilerplate/dotnet-minapi-boilerplate.csproj",
         "projectName": "dotnet-minapi-boilerplate",
-        "projectPath": "/Users/asaikovski/projects/dotnet/dotnet-min-api-boilerplate/dotnet-minapi-boilerplate.csproj",
+        "projectPath": "/Users/asaikovski/Developer/dotnet/dotnet-min-api-boilerplate/dotnet-minapi-boilerplate.csproj",
         "packagesPath": "/Users/asaikovski/.nuget/packages/",
-        "outputPath": "/Users/asaikovski/projects/dotnet/dotnet-min-api-boilerplate/obj/",
+        "outputPath": "/Users/asaikovski/Developer/dotnet/dotnet-min-api-boilerplate/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/asaikovski/.nuget/NuGet/NuGet.Config"
@@ -41,23 +41,23 @@
           "dependencies": {
             "Asp.Versioning.Http": {
               "target": "Package",
-              "version": "[8.0.0, )"
+              "version": "[8.1.0, )"
             },
             "Asp.Versioning.Mvc": {
               "target": "Package",
-              "version": "[8.0.0, )"
+              "version": "[8.1.0, )"
             },
             "Asp.Versioning.Mvc.ApiExplorer": {
               "target": "Package",
-              "version": "[8.0.0, )"
+              "version": "[8.1.0, )"
             },
             "AspNetCore.HealthChecks.UI.Client": {
               "target": "Package",
-              "version": "[8.0.0, )"
+              "version": "[8.0.1, )"
             },
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
-              "version": "[8.0.0, )"
+              "version": "[8.0.3, )"
             },
             "Microsoft.Extensions.Configuration": {
               "target": "Package",
@@ -65,13 +65,13 @@
             },
             "Serilog.AspNetCore": {
               "target": "Package",
-              "version": "[8.0.0, )"
+              "version": "[8.0.1, )"
             },
             "SonarAnalyzer.CSharp": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[9.16.0.82469, )"
+              "version": "[9.23.1.88495, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
@@ -97,7 +97,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.203/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

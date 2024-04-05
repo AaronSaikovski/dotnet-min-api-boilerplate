@@ -2,7 +2,7 @@
   "version": 3,
   "targets": {
     "net8.0": {
-      "Asp.Versioning.Abstractions/8.0.0": {
+      "Asp.Versioning.Abstractions/8.1.0": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.Primitives": "8.0.0"
@@ -18,10 +18,10 @@
           }
         }
       },
-      "Asp.Versioning.Http/8.0.0": {
+      "Asp.Versioning.Http/8.1.0": {
         "type": "package",
         "dependencies": {
-          "Asp.Versioning.Abstractions": "8.0.0"
+          "Asp.Versioning.Abstractions": "8.1.0"
         },
         "compile": {
           "lib/net8.0/Asp.Versioning.Http.dll": {
@@ -37,10 +37,10 @@
           "Microsoft.AspNetCore.App"
         ]
       },
-      "Asp.Versioning.Mvc/8.0.0": {
+      "Asp.Versioning.Mvc/8.1.0": {
         "type": "package",
         "dependencies": {
-          "Asp.Versioning.Http": "8.0.0"
+          "Asp.Versioning.Http": "8.1.0"
         },
         "compile": {
           "lib/net8.0/Asp.Versioning.Mvc.dll": {
@@ -53,10 +53,10 @@
           }
         }
       },
-      "Asp.Versioning.Mvc.ApiExplorer/8.0.0": {
+      "Asp.Versioning.Mvc.ApiExplorer/8.1.0": {
         "type": "package",
         "dependencies": {
-          "Asp.Versioning.Mvc": "8.0.0"
+          "Asp.Versioning.Mvc": "8.1.0"
         },
         "compile": {
           "lib/net8.0/Asp.Versioning.Mvc.ApiExplorer.dll": {
@@ -69,10 +69,10 @@
           }
         }
       },
-      "AspNetCore.HealthChecks.UI.Client/8.0.0": {
+      "AspNetCore.HealthChecks.UI.Client/8.0.1": {
         "type": "package",
         "dependencies": {
-          "AspNetCore.HealthChecks.UI.Core": "8.0.0",
+          "AspNetCore.HealthChecks.UI.Core": "8.0.1",
           "Microsoft.Extensions.Diagnostics.HealthChecks": "8.0.0"
         },
         "compile": {
@@ -89,7 +89,7 @@
           "Microsoft.AspNetCore.App"
         ]
       },
-      "AspNetCore.HealthChecks.UI.Core/8.0.0": {
+      "AspNetCore.HealthChecks.UI.Core/8.0.1": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.0",
@@ -106,7 +106,7 @@
           }
         }
       },
-      "Microsoft.AspNetCore.OpenApi/8.0.0": {
+      "Microsoft.AspNetCore.OpenApi/8.0.3": {
         "type": "package",
         "dependencies": {
           "Microsoft.OpenApi": "1.4.3"
@@ -446,7 +446,7 @@
           }
         }
       },
-      "Serilog.AspNetCore/8.0.0": {
+      "Serilog.AspNetCore/8.0.1": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection": "8.0.0",
@@ -593,7 +593,7 @@
           }
         }
       },
-      "SonarAnalyzer.CSharp/9.16.0.82469": {
+      "SonarAnalyzer.CSharp/9.23.1.88495": {
         "type": "package"
       },
       "Swashbuckle.AspNetCore/6.5.0": {
@@ -719,16 +719,16 @@
     }
   },
   "libraries": {
-    "Asp.Versioning.Abstractions/8.0.0": {
-      "sha512": "YkuUcrqi862hw/p8dKCsfOQ6y2mWTfjKHuQoFUA9GOaoBGZsu/FzsoBm6z28WkQIlXCZR1SG7safgHj2WCO/lw==",
+    "Asp.Versioning.Abstractions/8.1.0": {
+      "sha512": "mpeNZyMdvrHztJwR1sXIUQ+3iioEU97YMBnFA9WLbsPOYhGwDJnqJMmEd8ny7kcmS9OjTHoEuX/bSXXY3brIFA==",
       "type": "package",
-      "path": "asp.versioning.abstractions/8.0.0",
+      "path": "asp.versioning.abstractions/8.1.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE.txt",
         "README.md",
-        "asp.versioning.abstractions.8.0.0.nupkg.sha512",
+        "asp.versioning.abstractions.8.1.0.nupkg.sha512",
         "asp.versioning.abstractions.nuspec",
         "icon.png",
         "lib/net8.0/Asp.Versioning.Abstractions.dll",
@@ -739,62 +739,62 @@
         "lib/netstandard2.0/Asp.Versioning.Abstractions.xml"
       ]
     },
-    "Asp.Versioning.Http/8.0.0": {
-      "sha512": "pxHp26pXoCCIFUxFZz4UWPuYDFJ3PB0QpTpC4QRoLhu90eE3FBs0zmDeRO6Sb3y6hMnk6efdQHGbyCzd7XQIrA==",
+    "Asp.Versioning.Http/8.1.0": {
+      "sha512": "Xu4xF62Cu9JqYi/CTa2TiK5kyHoa4EluPynj/bPFWDmlTIPzuJQbBI5RgFYVRFHjFVvWMoA77acRaFu7i7Wzqg==",
       "type": "package",
-      "path": "asp.versioning.http/8.0.0",
+      "path": "asp.versioning.http/8.1.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE.txt",
         "README.md",
-        "asp.versioning.http.8.0.0.nupkg.sha512",
+        "asp.versioning.http.8.1.0.nupkg.sha512",
         "asp.versioning.http.nuspec",
         "icon.png",
         "lib/net8.0/Asp.Versioning.Http.dll",
         "lib/net8.0/Asp.Versioning.Http.xml"
       ]
     },
-    "Asp.Versioning.Mvc/8.0.0": {
-      "sha512": "zxuA7J6HewdjFF/9Cfb6VWovBTj3MdmLg6PztInratlXGpJ+BZjQzoT8FEMOurzmCxbEFPlQmeMW7b1iJKfsdg==",
+    "Asp.Versioning.Mvc/8.1.0": {
+      "sha512": "BMAJM2sGsTUw5FQ9upKQt6GFoldWksePgGpYjl56WSRvIuE3UxKZh0gAL+wDTIfLshUZm97VCVxlOGyrcjWz9Q==",
       "type": "package",
-      "path": "asp.versioning.mvc/8.0.0",
+      "path": "asp.versioning.mvc/8.1.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE.txt",
         "README.md",
-        "asp.versioning.mvc.8.0.0.nupkg.sha512",
+        "asp.versioning.mvc.8.1.0.nupkg.sha512",
         "asp.versioning.mvc.nuspec",
         "icon.png",
         "lib/net8.0/Asp.Versioning.Mvc.dll",
         "lib/net8.0/Asp.Versioning.Mvc.xml"
       ]
     },
-    "Asp.Versioning.Mvc.ApiExplorer/8.0.0": {
-      "sha512": "jrNwSdQ/FNGbwnb6SpNRuAZpJ5qrlSrEwOWaXFLc8vCC14bo/2ihwJ3IJWRbSnijLUyB9j9eKFVcVi1l8ShzZw==",
+    "Asp.Versioning.Mvc.ApiExplorer/8.1.0": {
+      "sha512": "a90gW/4TF/14Bjiwg9LqNtdKGC4G3gu02+uynq3bCISfQm48km5chny4Yg5J4hixQPJUwwJJ9Do1G+jM8L9h3g==",
       "type": "package",
-      "path": "asp.versioning.mvc.apiexplorer/8.0.0",
+      "path": "asp.versioning.mvc.apiexplorer/8.1.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE.txt",
         "README.md",
-        "asp.versioning.mvc.apiexplorer.8.0.0.nupkg.sha512",
+        "asp.versioning.mvc.apiexplorer.8.1.0.nupkg.sha512",
         "asp.versioning.mvc.apiexplorer.nuspec",
         "icon.png",
         "lib/net8.0/Asp.Versioning.Mvc.ApiExplorer.dll",
         "lib/net8.0/Asp.Versioning.Mvc.ApiExplorer.xml"
       ]
     },
-    "AspNetCore.HealthChecks.UI.Client/8.0.0": {
-      "sha512": "QT3hgIYPpoI4LDKVGBI2zpi6COnJOjTiYXhgEQK67vZU+g0mg+Z7JuT4PRHj3hJ5M98yPnnPlkz2VVaGZYEvaQ==",
+    "AspNetCore.HealthChecks.UI.Client/8.0.1": {
+      "sha512": "nhC6KIoB/EtTbH3uGm2J6EHEUyTJuETUARFePbmrnA+zjbwsirzIVUQl46qIjvyPABhK0e7Rk+AxcRqC6zikqA==",
       "type": "package",
-      "path": "aspnetcore.healthchecks.ui.client/8.0.0",
+      "path": "aspnetcore.healthchecks.ui.client/8.0.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "aspnetcore.healthchecks.ui.client.8.0.0.nupkg.sha512",
+        "aspnetcore.healthchecks.ui.client.8.0.1.nupkg.sha512",
         "aspnetcore.healthchecks.ui.client.nuspec",
         "icon.png",
         "lib/net6.0/HealthChecks.UI.Client.dll",
@@ -805,24 +805,24 @@
         "lib/net8.0/HealthChecks.UI.Client.xml"
       ]
     },
-    "AspNetCore.HealthChecks.UI.Core/8.0.0": {
-      "sha512": "g+w6mVjdXLdklLH55VsctlX2gsI3uIcJ5kwpzLftUSTbrizq+KCYJ7hw2JZKyOBdg4TqOKfuim9fCE+XjuN/hQ==",
+    "AspNetCore.HealthChecks.UI.Core/8.0.1": {
+      "sha512": "Vn00MOJ1I0HSqyP7Bt9v0pr0AIgbrXMjL/KFwW+sRwLRogOtep8BWGimd8XYRCbCDLrAi7VSArU02f6pEIw69w==",
       "type": "package",
-      "path": "aspnetcore.healthchecks.ui.core/8.0.0",
+      "path": "aspnetcore.healthchecks.ui.core/8.0.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "aspnetcore.healthchecks.ui.core.8.0.0.nupkg.sha512",
+        "aspnetcore.healthchecks.ui.core.8.0.1.nupkg.sha512",
         "aspnetcore.healthchecks.ui.core.nuspec",
         "icon.png",
         "lib/net6.0/HealthChecks.UI.Core.dll",
         "lib/net6.0/HealthChecks.UI.Core.xml"
       ]
     },
-    "Microsoft.AspNetCore.OpenApi/8.0.0": {
-      "sha512": "T4mwMvPSOYAp+KeQ4xO8H2rxpiOMJ9W/7yBBkUTMp96AHtGlPN4s7hbax2tM61LxTY775JKL4fiv5grn41EHXw==",
+    "Microsoft.AspNetCore.OpenApi/8.0.3": {
+      "sha512": "mUq0UL+H7UtA3Jud/7/BC7n5W2c4zCvTFUa2hE2+/oQqATa4oGHb87ETON09SEWkcbBRTz3WM16kTE+zuoXq2A==",
       "type": "package",
-      "path": "microsoft.aspnetcore.openapi/8.0.0",
+      "path": "microsoft.aspnetcore.openapi/8.0.3",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -830,7 +830,7 @@
         "THIRD-PARTY-NOTICES.TXT",
         "lib/net8.0/Microsoft.AspNetCore.OpenApi.dll",
         "lib/net8.0/Microsoft.AspNetCore.OpenApi.xml",
-        "microsoft.aspnetcore.openapi.8.0.0.nupkg.sha512",
+        "microsoft.aspnetcore.openapi.8.0.3.nupkg.sha512",
         "microsoft.aspnetcore.openapi.nuspec"
       ]
     },
@@ -1610,10 +1610,10 @@
         "serilog.nuspec"
       ]
     },
-    "Serilog.AspNetCore/8.0.0": {
-      "sha512": "FAjtKPZ4IzqFQBqZKPv6evcXK/F0ls7RoXI/62Pnx2igkDZ6nZ/jn/C/FxVATqQbEQvtqP+KViWYIe4NZIHa2w==",
+    "Serilog.AspNetCore/8.0.1": {
+      "sha512": "B/X+wAfS7yWLVOTD83B+Ip9yl4MkhioaXj90JSoWi1Ayi8XHepEnsBdrkojg08eodCnmOKmShFUN2GgEc6c0CQ==",
       "type": "package",
-      "path": "serilog.aspnetcore/8.0.0",
+      "path": "serilog.aspnetcore/8.0.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1629,7 +1629,7 @@
         "lib/net8.0/Serilog.AspNetCore.xml",
         "lib/netstandard2.0/Serilog.AspNetCore.dll",
         "lib/netstandard2.0/Serilog.AspNetCore.xml",
-        "serilog.aspnetcore.8.0.0.nupkg.sha512",
+        "serilog.aspnetcore.8.0.1.nupkg.sha512",
         "serilog.aspnetcore.nuspec"
       ]
     },
@@ -1805,10 +1805,10 @@
         "serilog.sinks.file.nuspec"
       ]
     },
-    "SonarAnalyzer.CSharp/9.16.0.82469": {
-      "sha512": "Lt8Ogx+O3fowiELb9Km/5LRW0GjgIccompIv8gOK8PDdAgh2ycWTfe/9RORmym2dsqmFNR3GqcB42vx7lLaqJg==",
+    "SonarAnalyzer.CSharp/9.23.1.88495": {
+      "sha512": "aKrXq94OO1wiMtsBttRd7vRJKFWp/eVeMJrPFB6OIbjbpxEySbKrLmM8Kj1ZF5jqp5yaZGBLMpe6jxodJqPyMg==",
       "type": "package",
-      "path": "sonaranalyzer.csharp/9.16.0.82469",
+      "path": "sonaranalyzer.csharp/9.23.1.88495",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
@@ -1819,7 +1819,7 @@
         "analyzers/SonarAnalyzer.dll",
         "images/sonarsource_64.png",
         "license/THIRD-PARTY-NOTICES.txt",
-        "sonaranalyzer.csharp.9.16.0.82469.nupkg.sha512",
+        "sonaranalyzer.csharp.9.23.1.88495.nupkg.sha512",
         "sonaranalyzer.csharp.nuspec",
         "tools/install.ps1",
         "tools/uninstall.ps1"
@@ -2055,14 +2055,14 @@
   },
   "projectFileDependencyGroups": {
     "net8.0": [
-      "Asp.Versioning.Http >= 8.0.0",
-      "Asp.Versioning.Mvc >= 8.0.0",
-      "Asp.Versioning.Mvc.ApiExplorer >= 8.0.0",
-      "AspNetCore.HealthChecks.UI.Client >= 8.0.0",
-      "Microsoft.AspNetCore.OpenApi >= 8.0.0",
+      "Asp.Versioning.Http >= 8.1.0",
+      "Asp.Versioning.Mvc >= 8.1.0",
+      "Asp.Versioning.Mvc.ApiExplorer >= 8.1.0",
+      "AspNetCore.HealthChecks.UI.Client >= 8.0.1",
+      "Microsoft.AspNetCore.OpenApi >= 8.0.3",
       "Microsoft.Extensions.Configuration >= 8.0.0",
-      "Serilog.AspNetCore >= 8.0.0",
-      "SonarAnalyzer.CSharp >= 9.16.0.82469",
+      "Serilog.AspNetCore >= 8.0.1",
+      "SonarAnalyzer.CSharp >= 9.23.1.88495",
       "Swashbuckle.AspNetCore >= 6.5.0"
     ]
   },
@@ -2072,11 +2072,11 @@
   "project": {
     "version": "1.2.0",
     "restore": {
-      "projectUniqueName": "/Users/asaikovski/projects/dotnet/dotnet-min-api-boilerplate/dotnet-minapi-boilerplate.csproj",
+      "projectUniqueName": "/Users/asaikovski/Developer/dotnet/dotnet-min-api-boilerplate/dotnet-minapi-boilerplate.csproj",
       "projectName": "dotnet-minapi-boilerplate",
-      "projectPath": "/Users/asaikovski/projects/dotnet/dotnet-min-api-boilerplate/dotnet-minapi-boilerplate.csproj",
+      "projectPath": "/Users/asaikovski/Developer/dotnet/dotnet-min-api-boilerplate/dotnet-minapi-boilerplate.csproj",
       "packagesPath": "/Users/asaikovski/.nuget/packages/",
-      "outputPath": "/Users/asaikovski/projects/dotnet/dotnet-min-api-boilerplate/obj/",
+      "outputPath": "/Users/asaikovski/Developer/dotnet/dotnet-min-api-boilerplate/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/asaikovski/.nuget/NuGet/NuGet.Config"
@@ -2106,23 +2106,23 @@
         "dependencies": {
           "Asp.Versioning.Http": {
             "target": "Package",
-            "version": "[8.0.0, )"
+            "version": "[8.1.0, )"
           },
           "Asp.Versioning.Mvc": {
             "target": "Package",
-            "version": "[8.0.0, )"
+            "version": "[8.1.0, )"
           },
           "Asp.Versioning.Mvc.ApiExplorer": {
             "target": "Package",
-            "version": "[8.0.0, )"
+            "version": "[8.1.0, )"
           },
           "AspNetCore.HealthChecks.UI.Client": {
             "target": "Package",
-            "version": "[8.0.0, )"
+            "version": "[8.0.1, )"
           },
           "Microsoft.AspNetCore.OpenApi": {
             "target": "Package",
-            "version": "[8.0.0, )"
+            "version": "[8.0.3, )"
           },
           "Microsoft.Extensions.Configuration": {
             "target": "Package",
@@ -2130,13 +2130,13 @@
           },
           "Serilog.AspNetCore": {
             "target": "Package",
-            "version": "[8.0.0, )"
+            "version": "[8.0.1, )"
           },
           "SonarAnalyzer.CSharp": {
             "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
             "suppressParent": "All",
             "target": "Package",
-            "version": "[9.16.0.82469, )"
+            "version": "[9.23.1.88495, )"
           },
           "Swashbuckle.AspNetCore": {
             "target": "Package",
@@ -2162,7 +2162,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.101/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.203/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
