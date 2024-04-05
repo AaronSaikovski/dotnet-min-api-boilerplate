@@ -5,7 +5,7 @@ namespace minapi.boilerplate.common.logger;
 /// <summary>
 /// Implements logging via Serilog
 /// </summary>
-public class SerilogLogger : ILoggerService
+public class SerilogLogger : ILoggerService,IDisposable
 {
     private readonly Serilog.Core.Logger _logger;
 
@@ -75,7 +75,8 @@ public class SerilogLogger : ILoggerService
     /// </summary>
     public void Dispose()
     {
-        Log.CloseAndFlush();
+        _logger.DisposeAsync();
+        //Log.CloseAndFlush();
     }
     
 }

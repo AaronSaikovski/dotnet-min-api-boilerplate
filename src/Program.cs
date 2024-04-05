@@ -10,7 +10,7 @@ using System.Diagnostics;
 var startTime = Stopwatch.GetTimestamp();
 
 //Init the logger and get the active config
-var logger = new SerilogLogger(ConfigurationHelper.ActiveConfiguration);
+using var logger = new SerilogLogger(ConfigurationHelper.ActiveConfiguration);
 
 
 //Sample logger usage - https://github.com/serilog/serilog-aspnetcore
@@ -41,7 +41,7 @@ try
     //register the delegate and record elapsed time
     lifetime.ApplicationStarted.Register(() =>
     {
-        Console.WriteLine("Startup time: " + Stopwatch.GetElapsedTime(startTime).TotalMilliseconds + "ms");
+        Console.WriteLine($"Startup time: {Stopwatch.GetElapsedTime(startTime).TotalMilliseconds}ms");
     });
 
     app.Run();
