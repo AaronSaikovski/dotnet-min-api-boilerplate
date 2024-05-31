@@ -8,6 +8,7 @@ namespace minapi.boilerplate.common.logger;
 public class SerilogLogger : ILoggerService,IDisposable
 {
     private readonly Serilog.Core.Logger _logger;
+    private bool _isDisposed = false;  
 
     /// <summary>
     /// Pass in Appsettings config
@@ -76,7 +77,7 @@ public class SerilogLogger : ILoggerService,IDisposable
     public void Dispose()
     {
         _logger.DisposeAsync();
-        //Log.CloseAndFlush();
+        GC.SuppressFinalize(_logger);
     }
     
 }

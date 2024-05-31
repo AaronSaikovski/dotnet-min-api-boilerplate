@@ -7,7 +7,8 @@ using minapi.boilerplate.endpoints;
 using System.Diagnostics;
 
 //Get timestamp
-var startTime = Stopwatch.GetTimestamp();
+long startTime;
+startTime = Stopwatch.GetTimestamp();
 
 //Init the logger and get the active config
 using var logger = new SerilogLogger(ConfigurationHelper.ActiveConfiguration);
@@ -31,6 +32,9 @@ try
     
     //Add health checks
     app.RegisterHealthCheck();
+
+    //add antiforgery to the pipeline
+    //app.UseAntiforgery();
     
     //Add the custom application endpoints
     AppEndpoints.RegisterAppEndpoints(app);
@@ -49,8 +53,4 @@ try
 catch (Exception ex)
 {
     logger.LogFatal(ex, "Application terminated unexpectedly");
-}
-finally
-{
-    logger.Dispose();
 }
