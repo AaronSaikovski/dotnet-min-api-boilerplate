@@ -3,8 +3,9 @@ using minapi.boilerplate.common.logger;
 using minapi.boilerplate.common.config;
 using minapi.boilerplate.extensions;
 using minapi.boilerplate.endpoints;
-
+using minapi.boilerplate.exceptions;
 using System.Diagnostics;
+
 
 //Get timestamp
 long startTime;
@@ -24,6 +25,9 @@ try
     //Register services
     builder.RegisterServices();
     
+    builder.Services.AddExceptionHandler<GlobalExceptionHandler>();
+    builder.Services.AddProblemDetails();
+    
     //Setup the builder
     var app = builder.Build();
     
@@ -35,6 +39,9 @@ try
 
     //add antiforgery to the pipeline
     //app.UseAntiforgery();
+    
+    //add exception handler to the pipeline
+    app.UseExceptionHandler();
     
     //Add the custom application endpoints
     AppEndpoints.RegisterAppEndpoints(app);
