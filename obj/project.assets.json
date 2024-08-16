@@ -106,7 +106,7 @@
           }
         }
       },
-      "Microsoft.AspNetCore.OpenApi/8.0.7": {
+      "Microsoft.AspNetCore.OpenApi/8.0.8": {
         "type": "package",
         "dependencies": {
           "Microsoft.OpenApi": "1.4.3"
@@ -591,7 +591,7 @@
           }
         }
       },
-      "SonarAnalyzer.CSharp/9.31.0.96804": {
+      "SonarAnalyzer.CSharp/9.32.0.97167": {
         "type": "package"
       },
       "Swashbuckle.AspNetCore/6.7.0": {
@@ -817,10 +817,10 @@
         "lib/net6.0/HealthChecks.UI.Core.xml"
       ]
     },
-    "Microsoft.AspNetCore.OpenApi/8.0.7": {
-      "sha512": "9SBDNvlwA88r5oD7yUbTmwr9ylkmZWdPQgohBWCdz6cESDAo6JgCD5vEOZS/nq2WIL5SCn3/RamAStcdiRzd4g==",
+    "Microsoft.AspNetCore.OpenApi/8.0.8": {
+      "sha512": "wNHhohqP8rmsQ4UhKbd6jZMD6l+2Q/+DvRBT0Cgqeuglr13aF6sSJWicZKCIhZAUXzuhkdwtHVc95MlPlFk0dA==",
       "type": "package",
-      "path": "microsoft.aspnetcore.openapi/8.0.7",
+      "path": "microsoft.aspnetcore.openapi/8.0.8",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -828,7 +828,7 @@
         "THIRD-PARTY-NOTICES.TXT",
         "lib/net8.0/Microsoft.AspNetCore.OpenApi.dll",
         "lib/net8.0/Microsoft.AspNetCore.OpenApi.xml",
-        "microsoft.aspnetcore.openapi.8.0.7.nupkg.sha512",
+        "microsoft.aspnetcore.openapi.8.0.8.nupkg.sha512",
         "microsoft.aspnetcore.openapi.nuspec"
       ]
     },
@@ -1804,10 +1804,10 @@
         "serilog.sinks.file.nuspec"
       ]
     },
-    "SonarAnalyzer.CSharp/9.31.0.96804": {
-      "sha512": "VsAT+UaPfkWsroyhMbh4cPvy8i6/uOJtBsr9tyyy2REKzibvU2yCXP3PiGaJNidPV0QdTYk7/PRzDE59IQnNRA==",
+    "SonarAnalyzer.CSharp/9.32.0.97167": {
+      "sha512": "Yxk86RV+8ynJpUhku1Yw2hITFmnmXKkXJ73cIFSy85ol5SnWREQg9RuTyV8nI7V7+pyLKpCfRmD7P0widsgjkg==",
       "type": "package",
-      "path": "sonaranalyzer.csharp/9.31.0.96804",
+      "path": "sonaranalyzer.csharp/9.32.0.97167",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
@@ -1815,10 +1815,11 @@
         "analyzers/Google.Protobuf.dll",
         "analyzers/SonarAnalyzer.CFG.dll",
         "analyzers/SonarAnalyzer.CSharp.dll",
+        "analyzers/SonarAnalyzer.ShimLayer.dll",
         "analyzers/SonarAnalyzer.dll",
         "images/sonarsource_64.png",
         "license/THIRD-PARTY-NOTICES.txt",
-        "sonaranalyzer.csharp.9.31.0.96804.nupkg.sha512",
+        "sonaranalyzer.csharp.9.32.0.97167.nupkg.sha512",
         "sonaranalyzer.csharp.nuspec",
         "tools/install.ps1",
         "tools/uninstall.ps1"
@@ -2070,10 +2071,10 @@
       "Asp.Versioning.Mvc >= 8.1.0",
       "Asp.Versioning.Mvc.ApiExplorer >= 8.1.0",
       "AspNetCore.HealthChecks.UI.Client >= 8.0.1",
-      "Microsoft.AspNetCore.OpenApi >= 8.0.7",
+      "Microsoft.AspNetCore.OpenApi >= 8.0.8",
       "Microsoft.Extensions.Configuration >= 8.0.0",
       "Serilog.AspNetCore >= 8.0.2",
-      "SonarAnalyzer.CSharp >= 9.31.0.96804",
+      "SonarAnalyzer.CSharp >= 9.32.0.97167",
       "Swashbuckle.AspNetCore >= 6.7.0"
     ]
   },
@@ -2109,6 +2110,11 @@
         "warnAsError": [
           "NU1605"
         ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -2133,7 +2139,7 @@
           },
           "Microsoft.AspNetCore.OpenApi": {
             "target": "Package",
-            "version": "[8.0.7, )"
+            "version": "[8.0.8, )"
           },
           "Microsoft.Extensions.Configuration": {
             "target": "Package",
@@ -2147,7 +2153,7 @@
             "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
             "suppressParent": "All",
             "target": "Package",
-            "version": "[9.31.0.96804, )"
+            "version": "[9.32.0.97167, )"
           },
           "Swashbuckle.AspNetCore": {
             "target": "Package",
@@ -2173,7 +2179,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.303/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.401/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
