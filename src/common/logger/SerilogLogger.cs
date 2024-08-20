@@ -5,10 +5,12 @@ namespace minapi.boilerplate.common.logger;
 /// <summary>
 /// Implements logging via Serilog
 /// </summary>
+#pragma warning disable S3881
 public class SerilogLogger : ILoggerService,IDisposable
+#pragma warning restore S3881
 {
     private readonly Serilog.Core.Logger _logger;
-    private bool _isDisposed = false;  
+
 
     /// <summary>
     /// Pass in Appsettings config
@@ -79,5 +81,7 @@ public class SerilogLogger : ILoggerService,IDisposable
         _logger.DisposeAsync();
         GC.SuppressFinalize(_logger);
     }
+    
+    
     
 }

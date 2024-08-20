@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "/S9By+Gt+vo=",
+  "dgSpecHash": "2gVbZS3x2sI=",
   "success": true,
   "projectFilePath": "/Users/asaikovski/Developer/dotnet/dotnet-min-api-boilerplate/dotnet-minapi-boilerplate.csproj",
   "expectedPackageFiles": [
@@ -38,10 +38,10 @@
     "/Users/asaikovski/.nuget/packages/serilog.sinks.debug/2.0.0/serilog.sinks.debug.2.0.0.nupkg.sha512",
     "/Users/asaikovski/.nuget/packages/serilog.sinks.file/5.0.0/serilog.sinks.file.5.0.0.nupkg.sha512",
     "/Users/asaikovski/.nuget/packages/sonaranalyzer.csharp/9.32.0.97167/sonaranalyzer.csharp.9.32.0.97167.nupkg.sha512",
-    "/Users/asaikovski/.nuget/packages/swashbuckle.aspnetcore/6.7.0/swashbuckle.aspnetcore.6.7.0.nupkg.sha512",
-    "/Users/asaikovski/.nuget/packages/swashbuckle.aspnetcore.swagger/6.7.0/swashbuckle.aspnetcore.swagger.6.7.0.nupkg.sha512",
-    "/Users/asaikovski/.nuget/packages/swashbuckle.aspnetcore.swaggergen/6.7.0/swashbuckle.aspnetcore.swaggergen.6.7.0.nupkg.sha512",
-    "/Users/asaikovski/.nuget/packages/swashbuckle.aspnetcore.swaggerui/6.7.0/swashbuckle.aspnetcore.swaggerui.6.7.0.nupkg.sha512",
+    "/Users/asaikovski/.nuget/packages/swashbuckle.aspnetcore/6.7.1/swashbuckle.aspnetcore.6.7.1.nupkg.sha512",
+    "/Users/asaikovski/.nuget/packages/swashbuckle.aspnetcore.swagger/6.7.1/swashbuckle.aspnetcore.swagger.6.7.1.nupkg.sha512",
+    "/Users/asaikovski/.nuget/packages/swashbuckle.aspnetcore.swaggergen/6.7.1/swashbuckle.aspnetcore.swaggergen.6.7.1.nupkg.sha512",
+    "/Users/asaikovski/.nuget/packages/swashbuckle.aspnetcore.swaggerui/6.7.1/swashbuckle.aspnetcore.swaggerui.6.7.1.nupkg.sha512",
     "/Users/asaikovski/.nuget/packages/system.diagnostics.diagnosticsource/8.0.0/system.diagnostics.diagnosticsource.8.0.0.nupkg.sha512",
     "/Users/asaikovski/.nuget/packages/system.text.encodings.web/8.0.0/system.text.encodings.web.8.0.0.nupkg.sha512",
     "/Users/asaikovski/.nuget/packages/system.text.json/8.0.4/system.text.json.8.0.4.nupkg.sha512"

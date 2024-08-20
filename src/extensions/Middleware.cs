@@ -24,7 +24,9 @@ public static class Middleware
         app.UseHttpsRedirection(); 
         
         //Uncomment this if using API Key middleware
-        //main.UseMiddleware<ApiKeyMiddleware>();
+#pragma warning disable S125
+        /* main.UseMiddleware<ApiKeyMiddleware>(); */
+#pragma warning restore S125
     }
     #endregion
 }

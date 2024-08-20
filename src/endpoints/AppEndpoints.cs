@@ -2,8 +2,12 @@ using Asp.Versioning;
 
 namespace minapi.boilerplate.endpoints;
 
+#pragma warning disable S1118
 public sealed class AppEndpoints
+#pragma warning restore S1118
 {
+   
+
     /// <summary>
     /// RegisterAppEndpoints
     /// </summary>
@@ -19,7 +23,6 @@ public sealed class AppEndpoints
         
         //Add the endpoint, passing the API VersionSet
         PingEndpoint.RegisterEndpoint(app, versionSet);
-        WeatherEndpoint.RegisterEndpoint(app, versionSet);
     }
     
 }

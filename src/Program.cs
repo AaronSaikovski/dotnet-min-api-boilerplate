@@ -37,9 +37,7 @@ try
     //Add health checks
     app.RegisterHealthCheck();
 
-    //add antiforgery to the pipeline
-    //app.UseAntiforgery();
-    
+
     //add exception handler to the pipeline
     app.UseExceptionHandler();
     
@@ -55,7 +53,9 @@ try
         Console.WriteLine($"Startup time: {Stopwatch.GetElapsedTime(startTime).TotalMilliseconds}ms");
     });
 
+#pragma warning disable S6966
     app.Run();
+#pragma warning restore S6966
 }
 catch (Exception ex)
 {
