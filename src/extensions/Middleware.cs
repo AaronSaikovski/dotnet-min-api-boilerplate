@@ -22,7 +22,8 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
 
-using minapi.boilerplate.middleware;
+/* Uncomment the line below to add API validation */
+//using minapi.boilerplate.middleware;
 
 namespace minapi.boilerplate.extensions;
 
@@ -47,7 +48,9 @@ public static class Middleware
         }
 
         app.UseHttpsRedirection(); 
-        app.UseMiddleware<ApiKeyMiddleware>();
+        
+        /* Uncomment the line below to add API validation */
+        // app.UseMiddleware<ApiKeyMiddleware>();
 
     }
     #endregion
