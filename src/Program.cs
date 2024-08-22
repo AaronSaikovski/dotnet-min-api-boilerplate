@@ -29,6 +29,11 @@ using minapi.boilerplate.endpoints;
 using minapi.boilerplate.exceptions;
 using System.Diagnostics;
 
+using HealthChecks.UI.Client;
+using Microsoft.AspNetCore.Diagnostics.HealthChecks;
+
+
+
 //Get timestamp
 long startTime;
 startTime = Stopwatch.GetTimestamp();
@@ -53,18 +58,20 @@ try
     //Setup the builder
     var app = builder.Build();
     
+    //add exception handler to the pipeline
+    app.UseExceptionHandler();
+    
     //Register middleware
     app.RegisterMiddleware();
     
     //Add health checks
     app.RegisterHealthCheck();
 
-
-    //add exception handler to the pipeline
-    app.UseExceptionHandler();
-    
     //Add the custom application endpoints
     AppEndpoints.RegisterAppEndpoints(app);
+
+    //Source: https://devblogs.microsoft.com/ise/next-level-clean-architecture-boilerplate/ & https://github.com/dorlugasigal/MiniClean.Template/tree/main
+    app.MapHealthChecks("/_health", new HealthCheckOptions { ResponseWriter = UIResponseWriter.WriteHealthCheckUIResponse });
     
     //get lifetime
     var lifetime= app.Services.GetRequiredService<IHostApplicationLifetime>();
