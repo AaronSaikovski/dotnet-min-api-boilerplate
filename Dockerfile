@@ -10,11 +10,11 @@ RUN dotnet restore
 COPY . ./
 
 # Publish the application
-RUN dotnet publish -c Release -o out
+RUN dotnet publish -c Release -o out --no-restore
 
 # Build the runtime image
 FROM mcr.microsoft.com/dotnet/aspnet:8.0-jammy-chiseled as runtime
-EXPOSE 8080
+#EXPOSE 8080
 WORKDIR /app
 COPY --from=build-env /app/out .
 
@@ -22,4 +22,5 @@ COPY --from=build-env /app/out .
 ENV ASPNETCORE_ENVIRONMENT=Production
 
 # Use the appropriate entry point for a .NET application
+EXPOSE 8080
 ENTRYPOINT ["./dotnet-minapi-boilerplate"]
