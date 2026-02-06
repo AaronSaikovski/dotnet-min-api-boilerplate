@@ -30,7 +30,7 @@ namespace minapi.boilerplate.common.logger;
 /// Implements logging via Serilog
 /// </summary>
 #pragma warning disable S3881
-public class SerilogLogger : ILoggerService,IDisposable
+public sealed class SerilogLogger : ILoggerService,IDisposable
 
 {
     private readonly Serilog.Core.Logger _logger;
@@ -102,8 +102,8 @@ public class SerilogLogger : ILoggerService,IDisposable
     /// </summary>
     public void Dispose()
     {
-        _logger.DisposeAsync();
-        GC.SuppressFinalize(_logger);
+        _logger.Dispose();
+        GC.SuppressFinalize(this);
     }
     
     

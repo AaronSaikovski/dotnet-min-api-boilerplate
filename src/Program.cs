@@ -1,7 +1,7 @@
 /*
 MIT License
 
-# Copyright (c) 2024 Aaron Saikovski
+# Copyright (c) 2026 Aaron Saikovski
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -22,15 +22,12 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
 
+using Carter;
 using minapi.boilerplate.common.logger;
 using minapi.boilerplate.common.config;
 using minapi.boilerplate.extensions;
-using minapi.boilerplate.endpoints;
 using minapi.boilerplate.exceptions;
 using System.Diagnostics;
-
-using HealthChecks.UI.Client;
-using Microsoft.AspNetCore.Diagnostics.HealthChecks;
 
 
 
@@ -52,6 +49,7 @@ try
     //Register services
     builder.RegisterServices();
     
+    builder.Services.AddCarter();
     builder.Services.AddExceptionHandler<GlobalExceptionHandler>();
     builder.Services.AddProblemDetails();
     
@@ -67,12 +65,9 @@ try
     //Add health checks
     app.RegisterHealthCheck();
 
-    //Add the custom application endpoints
-    AppEndpoints.RegisterAppEndpoints(app);
+    //Map Carter modules - auto-discovers all ICarterModule implementations
+    app.MapCarter();
 
-    //Source: https://devblogs.microsoft.com/ise/next-level-clean-architecture-boilerplate/ & https://github.com/dorlugasigal/MiniClean.Template/tree/main
-    app.MapHealthChecks("/_health", new HealthCheckOptions { ResponseWriter = UIResponseWriter.WriteHealthCheckUIResponse });
-    
     //get lifetime
     var lifetime= app.Services.GetRequiredService<IHostApplicationLifetime>();
     

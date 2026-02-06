@@ -22,20 +22,21 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
 
-using Asp.Versioning.Builder;
+using Asp.Versioning;
+using Carter;
+
 namespace minapi.boilerplate.endpoints;
 
-internal sealed class PingEndpoint : IRegisterEndpoint
+public sealed class PingEndpoint : ICarterModule
 {
-    //Ref: https://blog.treblle.com/how-to-structure-your-minimal-api-in-net/
-    
-   /// <summary>
-   /// 
-   /// </summary>
-   /// <param name="app"></param>
-   /// <param name="versionSet"></param>
-   public static void RegisterEndpoint(IEndpointRouteBuilder app, ApiVersionSet versionSet)
-    {        
+    public void AddRoutes(IEndpointRouteBuilder app)
+    {
+        var versionSet = app.NewApiVersionSet()
+            .HasApiVersion(new ApiVersion(1.0))
+            .HasApiVersion(new ApiVersion(2.0))
+            .ReportApiVersions()
+            .Build();
+
         // get  http://localhost:<PORT>/api/ping?api-version=1.0
         //Ping -> Pong
         app.MapGet("/api/ping", () =>
@@ -46,8 +47,7 @@ internal sealed class PingEndpoint : IRegisterEndpoint
             .WithName("ping-v1")
             .WithOpenApi();
 
-
-        // get  http://localhost:<PORT>>/api/ping?api-version=2.0
+        // get  http://localhost:<PORT>/api/ping?api-version=2.0
         app.MapGet("/api/ping", () =>
                 "pong-v2"
             )
@@ -55,6 +55,5 @@ internal sealed class PingEndpoint : IRegisterEndpoint
             .MapToApiVersion(2.0)
             .WithName("ping-v2")
             .WithOpenApi();
-
     }
 }

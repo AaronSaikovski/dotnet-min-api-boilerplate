@@ -60,7 +60,7 @@ public static class ConfigurationHelper
         ActiveConfiguration = configuration;
         
         //Auth Key
-        DataApiKey = configuration.GetSection("DataAPISvc")["XApiKey"];
+        DataApiKey = configuration["XApiKey"];
     }
     #endregion
     

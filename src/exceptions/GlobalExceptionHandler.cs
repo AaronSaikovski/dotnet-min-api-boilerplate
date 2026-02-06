@@ -29,7 +29,7 @@ using Microsoft.AspNetCore.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 namespace minapi.boilerplate.exceptions;
 
-public class GlobalExceptionHandler(ILogger<GlobalExceptionHandler> logger, IHostEnvironment environment) : IExceptionHandler
+public sealed class GlobalExceptionHandler(ILogger<GlobalExceptionHandler> logger, IHostEnvironment environment) : IExceptionHandler
 {
     private const bool IsLastStopInPipeline = true;
 
@@ -54,6 +54,7 @@ public class GlobalExceptionHandler(ILogger<GlobalExceptionHandler> logger, IHos
             problemDetails.Detail = exception.Message;
         }
 
+        httpContext.Response.StatusCode = statusCode;
         await httpContext.Response
             .WriteAsJsonAsync(problemDetails, cancellationToken);
         return IsLastStopInPipeline;
