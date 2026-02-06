@@ -6,7 +6,8 @@
       "WebFetch(domain:github.com)",
       "WebFetch(domain:code-maze.com)",
       "WebFetch(domain:www.c-sharpcorner.com)",
-      "WebFetch(domain:andrewlock.net)"
+      "WebFetch(domain:andrewlock.net)",
+      "Bash(find:*)"
     ]
   }
 }
