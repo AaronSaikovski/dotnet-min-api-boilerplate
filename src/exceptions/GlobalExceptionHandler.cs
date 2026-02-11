@@ -18,7 +18,7 @@ public sealed class GlobalExceptionHandler(ILogger<GlobalExceptionHandler> logge
         logger.LogError(exception, "Could not process a request on machine {MachineName} with trace id {TraceId}",
             Environment.MachineName, traceId);
 
-        (int statusCode, string title) = MapException(exception);
+        (var statusCode, var title) = MapException(exception);
 
         var problemDetails = new ProblemDetails
         {

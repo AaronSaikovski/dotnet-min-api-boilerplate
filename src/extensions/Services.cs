@@ -10,11 +10,10 @@ namespace minapi.boilerplate.extensions;
 /// </summary>
 public static class Services
 {
-    #region RegisterServices
+    
     /// <summary>
     /// RegisterServices
-    /// </summary>
-    /// <param name="builder"></param>
+    /// </summary>   
     public static void RegisterServices(this WebApplicationBuilder builder)
     {
         builder.Services.AddHealthChecks();
@@ -22,7 +21,7 @@ public static class Services
         builder.Services
             .AddApiVersioning(options =>
             {
-                options.DefaultApiVersion = new ApiVersion(1.0);
+                options.DefaultApiVersion = new ApiVersion(1);
                 options.ReportApiVersions = true;
                 options.AssumeDefaultVersionWhenUnspecified = true;
                 options.ApiVersionReader = ApiVersionReader.Combine(
@@ -37,5 +36,5 @@ public static class Services
             });
    
     }
-    #endregion
+    
 }

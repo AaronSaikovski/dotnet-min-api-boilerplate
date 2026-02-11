@@ -65,4 +65,4 @@ app.RegisterHealthCheck();
 //Map Carter modules - auto-discovers all ICarterModule implementations
 app.MapCarter();
 
-app.Run();
+await app.RunAsync();

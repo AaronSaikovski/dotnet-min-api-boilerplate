@@ -1,4 +1,5 @@
 using Carter;
+using System.Security.Cryptography;
 
 namespace minapi.boilerplate.endpoints;
 
@@ -18,8 +19,8 @@ public sealed class WeatherForecastEndpoint : ICarterModule
                         new WeatherForecast
                         (
                             DateOnly.FromDateTime(DateTime.Now.AddDays(index)),
-                            Random.Shared.Next(-20, 55),
-                            Summaries[Random.Shared.Next(Summaries.Length)]
+                            RandomNumberGenerator.GetInt32(-20, 55),
+                            Summaries[RandomNumberGenerator.GetInt32(Summaries.Length)]
                         ))
                     .ToArray();
                 return forecast;
@@ -28,7 +29,7 @@ public sealed class WeatherForecastEndpoint : ICarterModule
     }
 }
 
-record WeatherForecast(DateOnly Date, int TemperatureC, string? Summary)
+internal sealed record WeatherForecast(DateOnly Date, int TemperatureC, string? Summary)
 {
     public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
 }

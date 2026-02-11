@@ -148,6 +148,15 @@
           }
         }
       },
+      "Meziantou.Analyzer/2.0.295": {
+        "type": "package",
+        "build": {
+          "buildTransitive/Meziantou.Analyzer.props": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/Meziantou.Analyzer.props": {}
+        }
+      },
       "Microsoft.AspNetCore.OpenApi/10.0.2": {
         "type": "package",
         "dependencies": {
@@ -320,6 +329,9 @@
           }
         }
       },
+      "Roslynator.Analyzers/4.15.0": {
+        "type": "package"
+      },
       "Serilog/4.3.0": {
         "type": "package",
         "compile": {
@@ -477,6 +489,9 @@
       },
       "SonarAnalyzer.CSharp/10.19.0.132793": {
         "type": "package"
+      },
+      "xunit.analyzers/1.27.0": {
+        "type": "package"
       }
     }
   },
@@ -629,6 +644,37 @@
         "lib/netstandard2.0/FluentValidation.xml",
         "lib/netstandard2.1/FluentValidation.dll",
         "lib/netstandard2.1/FluentValidation.xml"
+      ]
+    },
+    "Meziantou.Analyzer/2.0.295": {
+      "sha512": "9qOg7wSpHnzW8lXisVBraIrKrdnkRcSt5Xj4Uz588RJdEL2YjToeMKOJAo98IP3oof94eaqKYAhOItu3qp1WWQ==",
+      "type": "package",
+      "path": "meziantou.analyzer/2.0.295",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "README.md",
+        "analyzers/dotnet/roslyn3.8/cs/Meziantou.Analyzer.CodeFixers.dll",
+        "analyzers/dotnet/roslyn3.8/cs/Meziantou.Analyzer.dll",
+        "analyzers/dotnet/roslyn4.14/cs/Meziantou.Analyzer.CodeFixers.dll",
+        "analyzers/dotnet/roslyn4.14/cs/Meziantou.Analyzer.dll",
+        "analyzers/dotnet/roslyn4.2/cs/Meziantou.Analyzer.CodeFixers.dll",
+        "analyzers/dotnet/roslyn4.2/cs/Meziantou.Analyzer.dll",
+        "analyzers/dotnet/roslyn4.4/cs/Meziantou.Analyzer.CodeFixers.dll",
+        "analyzers/dotnet/roslyn4.4/cs/Meziantou.Analyzer.dll",
+        "analyzers/dotnet/roslyn4.6/cs/Meziantou.Analyzer.CodeFixers.dll",
+        "analyzers/dotnet/roslyn4.6/cs/Meziantou.Analyzer.dll",
+        "analyzers/dotnet/roslyn4.8/cs/Meziantou.Analyzer.CodeFixers.dll",
+        "analyzers/dotnet/roslyn4.8/cs/Meziantou.Analyzer.dll",
+        "build/Meziantou.Analyzer.props",
+        "buildMultiTargeting/Meziantou.Analyzer.props",
+        "buildTransitive/Meziantou.Analyzer.props",
+        "configuration/default.editorconfig",
+        "configuration/none.editorconfig",
+        "icon.png",
+        "meziantou.analyzer.2.0.295.nupkg.sha512",
+        "meziantou.analyzer.nuspec"
       ]
     },
     "Microsoft.AspNetCore.OpenApi/10.0.2": {
@@ -1419,6 +1465,38 @@
         "microsoft.openapi.nuspec"
       ]
     },
+    "Roslynator.Analyzers/4.15.0": {
+      "sha512": "E8fu71Y+vzhniJKy1K13Rzwm8Vjcj7CDFBpflqncKUZfc3SzuF0kMBiyMmgXNPkjWTdE3Z+30HlGgYjHONZY/Q==",
+      "type": "package",
+      "path": "roslynator.analyzers/4.15.0",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "analyzers/dotnet/roslyn3.8/cs/Roslynator.CSharp.Analyzers.CodeFixes.dll",
+        "analyzers/dotnet/roslyn3.8/cs/Roslynator.CSharp.Analyzers.dll",
+        "analyzers/dotnet/roslyn3.8/cs/Roslynator_Analyzers_Roslynator.CSharp.Workspaces.dll",
+        "analyzers/dotnet/roslyn3.8/cs/Roslynator_Analyzers_Roslynator.CSharp.dll",
+        "analyzers/dotnet/roslyn3.8/cs/Roslynator_Analyzers_Roslynator.Common.dll",
+        "analyzers/dotnet/roslyn3.8/cs/Roslynator_Analyzers_Roslynator.Core.dll",
+        "analyzers/dotnet/roslyn3.8/cs/Roslynator_Analyzers_Roslynator.Workspaces.Common.dll",
+        "analyzers/dotnet/roslyn3.8/cs/Roslynator_Analyzers_Roslynator.Workspaces.Core.dll",
+        "analyzers/dotnet/roslyn4.7/cs/Roslynator.CSharp.Analyzers.CodeFixes.dll",
+        "analyzers/dotnet/roslyn4.7/cs/Roslynator.CSharp.Analyzers.dll",
+        "analyzers/dotnet/roslyn4.7/cs/Roslynator_Analyzers_Roslynator.CSharp.Workspaces.dll",
+        "analyzers/dotnet/roslyn4.7/cs/Roslynator_Analyzers_Roslynator.CSharp.dll",
+        "analyzers/dotnet/roslyn4.7/cs/Roslynator_Analyzers_Roslynator.Common.dll",
+        "analyzers/dotnet/roslyn4.7/cs/Roslynator_Analyzers_Roslynator.Core.dll",
+        "analyzers/dotnet/roslyn4.7/cs/Roslynator_Analyzers_Roslynator.Workspaces.Common.dll",
+        "analyzers/dotnet/roslyn4.7/cs/Roslynator_Analyzers_Roslynator.Workspaces.Core.dll",
+        "docs/README.md",
+        "icon.png",
+        "roslynator.analyzers.4.15.0.nupkg.sha512",
+        "roslynator.analyzers.nuspec",
+        "tools/install.ps1",
+        "tools/uninstall.ps1"
+      ]
+    },
     "Serilog/4.3.0": {
       "sha512": "+cDryFR0GRhsGOnZSKwaDzRRl4MupvJ42FhCE4zhQRVanX0Jpg6WuCBk59OVhVDPmab1bB+nRykAnykYELA9qQ==",
       "type": "package",
@@ -1655,6 +1733,24 @@
         "tools/install.ps1",
         "tools/uninstall.ps1"
       ]
+    },
+    "xunit.analyzers/1.27.0": {
+      "sha512": "y/pxIQaLvk/kxAoDkZW9GnHLCEqzwl5TW0vtX3pweyQpjizB9y3DXhb9pkw2dGeUqhLjsxvvJM1k89JowU6z3g==",
+      "type": "package",
+      "path": "xunit.analyzers/1.27.0",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "_content/README.md",
+        "_content/logo-128-transparent.png",
+        "analyzers/dotnet/cs/xunit.analyzers.dll",
+        "analyzers/dotnet/cs/xunit.analyzers.fixes.dll",
+        "tools/install.ps1",
+        "tools/uninstall.ps1",
+        "xunit.analyzers.1.27.0.nupkg.sha512",
+        "xunit.analyzers.nuspec"
+      ]
     }
   },
   "projectFileDependencyGroups": {
@@ -1664,29 +1760,33 @@
       "Asp.Versioning.Mvc.ApiExplorer >= 8.1.1",
       "AspNetCore.HealthChecks.UI.Client >= 9.0.0",
       "Carter >= 8.2.1",
+      "Meziantou.Analyzer >= 2.0.295 <= 2.0.295",
       "Microsoft.AspNetCore.OpenApi >= 10.0.2",
+      "Roslynator.Analyzers >= 4.15.0 <= 4.15.0",
       "Serilog.AspNetCore >= 10.0.0",
-      "SonarAnalyzer.CSharp >= 10.19.0.132793"
+      "SonarAnalyzer.CSharp >= 10.19.0.132793 <= 10.19.0.132793",
+      "xunit.analyzers >= 1.27.0 <= 1.27.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Aaron Saikovski\\.nuget\\packages\\": {},
+    "C:\\Users\\asaik\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.3.0",
     "restore": {
-      "projectUniqueName": "C:\\Development\\Personal\\DotNet\\dotnet-min-api-boilerplate\\dotnet-minapi-boilerplate.csproj",
+      "projectUniqueName": "C:\\Development\\dotnet\\dotnet-min-api-boilerplate\\dotnet-minapi-boilerplate.csproj",
       "projectName": "dotnet-minapi-boilerplate",
-      "projectPath": "C:\\Development\\Personal\\DotNet\\dotnet-min-api-boilerplate\\dotnet-minapi-boilerplate.csproj",
-      "packagesPath": "C:\\Users\\Aaron Saikovski\\.nuget\\packages\\",
-      "outputPath": "C:\\Development\\Personal\\DotNet\\dotnet-min-api-boilerplate\\obj\\",
+      "projectPath": "C:\\Development\\dotnet\\dotnet-min-api-boilerplate\\dotnet-minapi-boilerplate.csproj",
+      "packagesPath": "C:\\Users\\asaik\\.nuget\\packages\\",
+      "outputPath": "C:\\Development\\dotnet\\dotnet-min-api-boilerplate\\obj\\",
       "projectStyle": "PackageReference",
+      "centralPackageVersionsManagementEnabled": true,
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Aaron Saikovski\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\asaik\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -1695,7 +1795,6 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -1722,38 +1821,112 @@
         "dependencies": {
           "Asp.Versioning.Http": {
             "target": "Package",
-            "version": "[8.1.1, )"
+            "version": "[8.1.1, )",
+            "versionCentrallyManaged": true
           },
           "Asp.Versioning.Mvc": {
             "target": "Package",
-            "version": "[8.1.1, )"
+            "version": "[8.1.1, )",
+            "versionCentrallyManaged": true
           },
           "Asp.Versioning.Mvc.ApiExplorer": {
             "target": "Package",
-            "version": "[8.1.1, )"
+            "version": "[8.1.1, )",
+            "versionCentrallyManaged": true
           },
           "AspNetCore.HealthChecks.UI.Client": {
             "target": "Package",
-            "version": "[9.0.0, )"
+            "version": "[9.0.0, )",
+            "versionCentrallyManaged": true
           },
           "Carter": {
             "target": "Package",
-            "version": "[8.2.1, )"
+            "version": "[8.2.1, )",
+            "versionCentrallyManaged": true
+          },
+          "Meziantou.Analyzer": {
+            "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+            "target": "Package",
+            "version": "[2.0.295, 2.0.295]",
+            "versionCentrallyManaged": true
           },
           "Microsoft.AspNetCore.OpenApi": {
             "target": "Package",
-            "version": "[10.0.2, )"
+            "version": "[10.0.2, )",
+            "versionCentrallyManaged": true
+          },
+          "Roslynator.Analyzers": {
+            "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+            "target": "Package",
+            "version": "[4.15.0, 4.15.0]",
+            "versionCentrallyManaged": true
           },
           "Serilog.AspNetCore": {
             "target": "Package",
-            "version": "[10.0.0, )"
+            "version": "[10.0.0, )",
+            "versionCentrallyManaged": true
           },
           "SonarAnalyzer.CSharp": {
             "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-            "suppressParent": "All",
             "target": "Package",
-            "version": "[10.19.0.132793, )"
+            "version": "[10.19.0.132793, 10.19.0.132793]",
+            "versionCentrallyManaged": true
+          },
+          "xunit.analyzers": {
+            "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+            "target": "Package",
+            "version": "[1.27.0, 1.27.0]",
+            "versionCentrallyManaged": true
           }
+        },
+        "centralPackageVersions": {
+          "Asp.Versioning.Http": "8.1.1",
+          "Asp.Versioning.Mvc": "8.1.1",
+          "Asp.Versioning.Mvc.ApiExplorer": "8.1.1",
+          "Aspire.Hosting.PostgreSQL": "13.1.0",
+          "AspNetCore.HealthChecks.UI.Client": "9.0.0",
+          "Bogus": "35.6.5",
+          "Carter": "8.2.1",
+          "coverlet.collector": "6.0.4",
+          "EFCore.NamingConventions": "10.0.1",
+          "FluentValidation": "12.1.1",
+          "FluentValidation.DependencyInjectionExtensions": "12.1.1",
+          "Meziantou.Analyzer": "[2.0.295]",
+          "Microsoft.AspNetCore.Authentication.JwtBearer": "10.0.2",
+          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "10.0.2",
+          "Microsoft.AspNetCore.Mvc.Testing": "10.0.2",
+          "Microsoft.AspNetCore.OpenApi": "10.0.2",
+          "Microsoft.EntityFrameworkCore": "10.0.2",
+          "Microsoft.EntityFrameworkCore.Design": "10.0.2",
+          "Microsoft.EntityFrameworkCore.InMemory": "9.0.7",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.2",
+          "Microsoft.Extensions.Http.Resilience": "10.2.0",
+          "Microsoft.Extensions.Logging.Abstractions": "10.0.2",
+          "Microsoft.Extensions.ServiceDiscovery": "10.2.0",
+          "Microsoft.NET.Test.Sdk": "18.0.1",
+          "NetArchTest.Rules": "1.3.2",
+          "Npgsql.EntityFrameworkCore.PostgreSQL": "10.0.0",
+          "Npgsql.OpenTelemetry": "10.0.1",
+          "NSubstitute": "5.1.0",
+          "OpenTelemetry.Exporter.OpenTelemetryProtocol": "1.15.0",
+          "OpenTelemetry.Extensions.Hosting": "1.15.0",
+          "OpenTelemetry.Instrumentation.AspNetCore": "1.15.0",
+          "OpenTelemetry.Instrumentation.Http": "1.15.0",
+          "OpenTelemetry.Instrumentation.Runtime": "1.15.0",
+          "Respawn": "7.0.0",
+          "Roslynator.Analyzers": "[4.15.0]",
+          "Scalar.AspNetCore": "2.12.35",
+          "Serilog.AspNetCore": "10.0.0",
+          "Serilog.Sinks.Console": "6.1.1",
+          "Serilog.Sinks.Seq": "9.0.0",
+          "SonarAnalyzer.CSharp": "[10.19.0.132793]",
+          "Swashbuckle.AspNetCore": "10.1.1",
+          "System.IdentityModel.Tokens.Jwt": "8.15.0",
+          "Testcontainers": "4.10.0",
+          "Testcontainers.PostgreSql": "4.10.0",
+          "xunit": "2.9.3",
+          "xunit.analyzers": "[1.27.0]",
+          "xunit.runner.visualstudio": "3.1.5"
         },
         "imports": [
           "net461",
@@ -1774,7 +1947,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.102/PortableRuntimeIdentifierGraph.json",
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.103/PortableRuntimeIdentifierGraph.json",
         "packagesToPrune": {
           "Microsoft.AspNetCore": "(,10.0.32767]",
           "Microsoft.AspNetCore.Antiforgery": "(,10.0.32767]",

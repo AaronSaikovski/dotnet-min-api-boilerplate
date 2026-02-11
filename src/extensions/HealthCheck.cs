@@ -7,11 +7,10 @@ namespace minapi.boilerplate.extensions;
 
 public static class HealthCheck
 {
-    #region RegisterHealthCheck
+
     /// <summary>
-    /// 
+    /// register health checks
     /// </summary>
-    /// <param name="app"></param>
     public static void RegisterHealthCheck(this WebApplication app)
     {
         //Add health checks - ref: https://www.milanjovanovic.tech/blog/health-checks-in-asp-net-core
@@ -22,5 +21,5 @@ public static class HealthCheck
                 ResponseWriter = UIResponseWriter.WriteHealthCheckUIResponse
             });
     }
-    #endregion
+ 
 }

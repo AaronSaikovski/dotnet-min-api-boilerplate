@@ -7,7 +7,7 @@ namespace minapi.boilerplate.common.config;
 /// </summary>
 public static class ConfigurationHelper
 {
-    #region fields
+
     
     //API Key
     public static string? DataApiKey { get; set;}
@@ -15,9 +15,9 @@ public static class ConfigurationHelper
     //Active Services
     public static IConfiguration ActiveConfiguration { get; set;}
     
-    #endregion
 
-    #region ConfigurationHelper
+
+
     /// <summary>
     /// config helper
     /// </summary>
@@ -40,7 +40,7 @@ public static class ConfigurationHelper
         //Auth Key
         DataApiKey = configuration["XApiKey"];
     }
-    #endregion
+
     
   
   

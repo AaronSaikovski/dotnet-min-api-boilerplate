@@ -12,11 +12,10 @@ namespace minapi.boilerplate.extensions;
 /// </summary>
 public static class Middleware
 {
-    #region RegisterMiddleware
+   
     /// <summary>
     /// RegisterMiddleware
-    /// </summary>
-    /// <param name="app"></param>
+    /// </summary>   
     public static void RegisterMiddleware(this WebApplication app)
     {
         app.UseHttpsRedirection();
@@ -25,5 +24,5 @@ public static class Middleware
         // app.UseMiddleware<ApiKeyMiddleware>();
 
     }
-    #endregion
+   
 }
