@@ -5,15 +5,15 @@
 [![Build Status](https://github.com/AaronSaikovski/dotnet-min-api-boilerplate/workflows/build/badge.svg)](https://github.com/AaronSaikovski/dotnet-min-api-boilerplate/actions)
 
 
-An `ASP.Net Core 8.0` Minimal WebApi boilerplate starter project. Includes Swagger, Serilog and Docker support. This is designed to be as bare bones as possible to get you started with minimal APIs in .Net 8.0.
-The goal of this project is to be an way to kick start your .Net 8.0 WebApi projects to get you going quicker. The goal is to be as lean and trimmed as possible to make things easy when building Web APIs in .Net 8.0.
+An `ASP.Net Core 10.0` Minimal WebApi boilerplate starter project. Includes Swagger, Serilog and Docker support. This is designed to be as bare bones as possible to get you started with minimal APIs in .Net 10.0.
+The goal of this project is to be an way to kick start your .Net 10.0 WebApi projects to get you going quicker. The goal is to be as lean and trimmed as possible to make things easy when building Web APIs in .Net 10.0.
 </div>
 
 
 # How to get started
 
 - Use this template(github) or clone/download to your local machine.
-- Download the latest .Net 8 SDK.
+- Download the latest .Net 10.0 SDK.
 - Use your favourite IDE - Visual Studio/Code/JetBrains Rider.
 
 ## Standalone
@@ -37,16 +37,19 @@ The goal of this project is to be an way to kick start your .Net 8.0 WebApi proj
 - Serilog
 - Minimal API (.Net 8.0)
 - CI (Github Actions)
-- Unit tests
 - Container support with [docker](Dockerfile) and [docker-compose](docker-compose.yml)
-- NuGet Central package management (CPM)
 - API Versioning - https://www.nuget.org/packages/Asp.Versioning.Http
+- [Carter](https://github.com/CarterCommunity/Carter) module-based endpoint routing
+- Global exception handling with ProblemDetails responses
+- Health checks endpoint (`/health`) with UI response writer
+- SonarAnalyzer for static code analysis
+- Startup time diagnostics
 
 # Project Structure
 
 1. endpoints
 
-   - This folder is where you set your endpoints via routes - refer to SampleEndpoints.cs for some examples of this. There is a new interface `IRegisterEndpoints` that any new endpoints will need to implement to be able to be used. Also there are examples of the API versioning to show how to version your APIs between releases.
+   - This folder is where you set your endpoints via routes. Endpoints are defined as [Carter](https://github.com/CarterCommunity/Carter) modules by implementing `ICarterModule`. Carter auto-discovers all module implementations at startup. Refer to `PingEndPoint.cs` for an example including API versioning to show how to version your APIs between releases.
 
 2. extensions
 
@@ -56,15 +59,19 @@ The goal of this project is to be an way to kick start your .Net 8.0 WebApi proj
 
    - This folder is where the middleware handlers are for supporting API key validation. Looks for a header value `XApiKey` to be set. Please dont save API keys in your project!
 
-4. common
+4. exceptions
+
+   - This folder contains the `GlobalExceptionHandler` which implements `IExceptionHandler`. It catches unhandled exceptions, logs them with trace IDs, and returns structured `ProblemDetails` responses. In non-production environments, exception details are included in the response.
+
+5. common
 
    - This folder contains the config and logger helper services in their own subfolders.
    - config - reads from the `appsettings.Development.json` and `appsettings.json` files based on current build configuration - Debug vs. release
-   - logger - provides the shared serilog logging module that provides detailed logging services to the API. The logging settings are set in the `appsettings.json` and `appsettings.Development.json`
+   - logger - provides the shared Serilog logging module that provides detailed logging services to the API. The logging settings are set in the `appsettings.json` and `appsettings.Development.json`
 
-5. Program.cs (root folder) 
-   
-   - This is the main entry point for the API and is pretty self explanatory. There is minimal code in here for maintainability purposes. There are base level service healthchecks that are setup in here as part of the API startup process.
+6. Program.cs (root folder)
+
+   - This is the main entry point for the API. There is minimal code in here for maintainability purposes. It registers services, Carter modules, the global exception handler, middleware, and health checks. Startup time is measured and logged on application start.
 
 # Adopting to your project
 
@@ -74,8 +81,7 @@ The goal of this project is to be an way to kick start your .Net 8.0 WebApi proj
 
 # Known issues
 
-1. There are no unit tests and these will come in the next release.
-2. There is no JWT or Auth support and this will come in a future release.
+1. There is no JWT or Auth support and this will come in a future release.
    
   Please report any issues [here](https://github.com/AaronSaikovski/dotnet-min-api-boilerplate/issues).
 

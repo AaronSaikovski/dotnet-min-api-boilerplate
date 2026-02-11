@@ -1,5 +1,5 @@
-# Use the official .NET Core SDK as a parent image
-FROM --platform=$BUILDPLATFORM mcr.microsoft.com/dotnet/sdk:8.0-jammy AS build-env
+# Use the official .NET SDK as a parent image
+FROM --platform=$BUILDPLATFORM mcr.microsoft.com/dotnet/sdk:10.0 AS build-env
 WORKDIR /app
 
 # Copy the project file and restore any dependencies
@@ -13,8 +13,7 @@ COPY . ./
 RUN dotnet publish -c Release -o out --no-restore
 
 # Build the runtime image
-FROM mcr.microsoft.com/dotnet/aspnet:8.0-jammy-chiseled as runtime
-#EXPOSE 8080
+FROM mcr.microsoft.com/dotnet/aspnet:10.0-noble-chiseled AS runtime
 WORKDIR /app
 COPY --from=build-env /app/out .
 

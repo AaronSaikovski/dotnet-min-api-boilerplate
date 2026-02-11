@@ -1,8 +1,0 @@
-﻿services:
-  dotnet-minapi-boilerplate:
-    image: dotnet-minapi-boilerplate
-    build:
-      context: .
-      dockerfile: Dockerfile
-    ports:
-      - 8080:8080
